@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>تجربه باز</title>
+
+    <link href="http://kiavash.one/feed.xml" rel="self"/>
+
+    <link href="http://kiavash.one"/>
+
+    <updated>2018-03-01T00:42:37+0330</updated>
+    <id>http://kiavash.one</id>
+    
+    <author>
+    	<name>کیاوش</name>
+    </author>
+    
+	<generator>mira</generator>
+
+	
+	<entry>
+		<title>سلام دنیا</title>
+		<link href="http://kiavash.one/2018/01/hello-world/"/>
+		<id>http://kiavash.one/2018/01/hello-world/</id>
+
+		<published>2018-03-01T00:21:54+0330</published>
+		<updated>2018-03-01T00:21:54+0330</updated>
+
+		<content type="html"><![CDATA[<a name="more"></a>
+<p>سلام دنیا.</p>
+
+<p>این اولین نوشته این وبلاگ است که با کمک <a href="miraxy.githu.io/fa/">میرا</a> ساخته شده.</p>
+]]></content>
+
+		<summary>
+		&lt;p&gt;سلام دنیا.
+
+این اولین نوشته این وبلاگ است که با کمک میرا ساخته شده.
+&lt;/p&gt;
+		</summary>			
+				
+						
+				
+			
+	</entry>
+	
+
+
+</feed>
