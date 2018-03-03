@@ -44,101 +44,13 @@
         <section id="content" class="container">
             
                 <article id="cannaon-lbp6000" class="article article-type-" itemscope itemprop="blogPost">
-                    <h1 class="title" itemprop="name">
+                    <h1 class="list-title" itemprop="name">
                     <a href="/2018/03/cannaon-lbp6000/" itemprop="url">نصب پرینتر cannaon lbp6000 برای دبیان/اوبونتو</a>
                     </h1>
-                    
-                    <h4 class="time"><time datetime="2018-03-03 20:31:56" itemprop="datePublished">شنبه، ۱۲&nbsp;اسفند&nbsp;۱۳۹۶</time></h4>
+                     - 
+                    <h4 class="list-time"><time datetime="2018-03-03 20:31:56" itemprop="datePublished">
+                    ۱۳۹۶/۱۲/۱۲</time></h4>
 	                
-                    <section class="content">
-                        <a name="more"></a>
-<p>درایور پرینترهای cannon آزاد نیستند و کتابخانه‌های باینری تهیه شده توسط cannon برای معماری i386 هستند. پس اگر میخواهید از این پرینترها روی سیستم‌های ۶۴بیتی استفاده کنید، باید در ابتدا معماری چندگانه را فعال کنید و چند کتابخانه را نصب کنید:</p>
-
-<pre><code class="language-bash"># amd64 only
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get install libstdc++6:i386 libxml2:i386 zlib1g:i386 libpopt0:i386
-</code></pre>
-
-<p>اگر cups نصب نیست آن‌را نصب کنید:</p>
-
-<pre><code class="language-bash">sudo apt-get install cups
-</code></pre>
-
-<p>درایورهای کنون را <a href="http://support-asia.canon-asia.com/contents/ASIA/EN/0100459601.html">دانلود</a> و از حالت فشرده خارج کنید:</p>
-
-<pre><code class="language-bash">wget http://gdlp01.c-wss.com/gds/6/0100004596 مستقمیا از طریق خط فرمان دریافت کنید
-tar -zxvf Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz/03/Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz
-</code></pre>
-
-<p>درایور ۳۲ یا ۶۴ بیتی مورد نیاز را نصب کنید:</p>
-
-<pre><code class="language-bash"> - 32-bit:
-sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/32-bit_Driver/Debian/*.deb
-
- - 64-bit:
-sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
-</code></pre>
-
-<p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر</p>
-
-<pre><code>/usr/share/cups/model
-</code></pre>
-
-<p>نگاه میکنیم، هم‌نام یا شبیه‌ترین نام به مدل دستگاه خود را پیدا کنید.</p>
-
-<pre><code class="language-bash">grep -H ModelName /usr/share/cups/model/*.ppd | less
-...
-    /usr/share/cups/model/CNCUPSLBP6018CAPTS.ppd:*ModelName: "Canon LBP6000/LBP6018 CAPT (US)"
-</code></pre>
-
-<p>برای این مورد ما <code>CNCUPSLBP6018CAPTS.ppd</code> را که با مدل LBP6000 همخوانی دارد را انتخاب میکنیم.</p>
-
-<pre><code class="language-bash">sudo lpadmin -p LBP6000 -m CNCUPSLBP6018CAPTS.ppd -v ccp://localhost:59687
-sudo lpadmin -p LBP6000 -E
-sudo ccpdadmin -p LBP6000 -o /dev/usb/lp0
-</code></pre>
-
-<p>و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم</p>
-
-<pre><code class="language-bash">sudo update-rc.d ccpd defaults
-</code></pre>
-
-<p>گاهی اوقات ccpd هنگ میکند و queue تنها پیغام Processing since را نمایش می‌دهد و هیچ پرینتی صورت نمیگیرد، در این حالت برای پرینت گرفتن این دستورات را به ترتیب اجرا کنید یا یک فایل bash بسازید که تمام این دستورات را به ترتیب اجرا کند:</p>
-
-<pre><code class="language-bash">pkill -9 -x ccpd
-pkill -9 -x captmoncnabc
-/etc/init.d/ccpd start
-/etc/init.d/ccpd status
-</code></pre>
-
-<p>احتمالا برای اجرای اکثر دستورات بالا به sudo هم نیاز خواهید داشت.</p>
-
-<p>برای به اشتراک گذاشتن پرینتر در شبکه با کامپیوترهایی که از ویندوز استفاده میکنند هم samba را نصب کیند و این تغییرات را در تنظیمات آن اعمال کنید:</p>
-
-<pre><code>sudo gedit /etc/samba/smb.conf
-</code></pre>
-
-<p>در قسمت [printers] :</p>
-
-<pre><code>browseable = yes
-guest ok = yes
-</code></pre>
-
-<p>و samba را ری‌استارت کنید:</p>
-
-<pre><code>sudo service smbd restart
-sudo service nmbd restart
-</code></pre>
-
-<p>در setting سیستم، قسمت printer منوی server را انتخاب کنید و Publish shared printers connected to this server را فعال کنید، بر روی پرینتر نصب شده کلیک راست کنید و Shared را چک بزنید.</p>
-
-                    </section>
-
-                    <section class="meta">
-                    <hr>
-                        <span>                            دسته بندی:                                <a href="/categories/experience/">تجربه</a>                            برچسب‌ها:                                <a href="/tags/cannon/">cannon</a>،&nbsp;                                <a href="/tags/lbp6000/">lbp6000</a>،&nbsp;                                <a href="/tags/لینوکس/">لینوکس</a>،&nbsp;                                <a href="/tags/cups/">cups</a>،&nbsp;                                <a href="/tags/samba/">samba</a>،&nbsp;                                <a href="/tags/پرینتر/">پرینتر</a>،&nbsp;                                <a href="/tags/اوبونتو/">اوبونتو</a>                        </span>
-                    </section>
                 </article>
             
         </section>
@@ -174,7 +86,8 @@ sudo service nmbd restart
 
         <section class="archivebar">			            <ul>			<li><a href="/categories/mira/">میرا</a></li>
             			<li><a href="/categories/experience/">تجربه</a></li>
-                        </ul>        <hr>            <ul class="tags">			<li><a href="/tags/پرینتر/">پرینتر</a></li>
+                        </ul>
+            <hr>            <ul class="tags">			<li><a href="/tags/پرینتر/">پرینتر</a></li>
 			 - 
             			<li><a href="/tags/mira/">میرا</a></li>
 			 - 
