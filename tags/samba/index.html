@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>تجربه باز | اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</title>
+        <title>تجربه باز | بایگانی: samba</title>
         <meta name="keywords" content="">
         <meta property="og:type" content="website">
         <meta property="og:title" content="تجربه باز">
@@ -42,67 +42,100 @@
       <div id="alpha">
         <div id="alpha-inner">
           
-          <article id="cloudflare" itemscope itemprop="blogPost">
+          <article id="cannaon-lbp6000" itemscope itemprop="blogPost">
             <h1 class="entry-title" itemprop="name">
-            <a href="/2018/13/cloudflare/" itemprop="url">اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</a>
+            <a href="/2018/03/cannaon-lbp6000/" itemprop="url">نصب پرینتر cannaon lbp6000 برای دبیان/اوبونتو</a>
             </h1>
             
-            <div class="entry-date"><time datetime="2018-03-13 21:54:13" itemprop="datePublished">سه‌شنبه‌، ۲۲&nbsp;اسفند&nbsp;۱۳۹۶</time></div>
+            <div class="entry-date"><time datetime="2018-03-03 20:31:56" itemprop="datePublished">شنبه، ۱۲&nbsp;اسفند&nbsp;۱۳۹۶</time></div>
         	  
             <section class="entry-body">
             <a name="more"></a>
-<p>من برای مدیریت dns سایت از cloudflare استفاده می‌کنم و از اونجایی که این سایت رو به صورت استاتیک می‌سازم و از قابلیت صفحه‌های گیت‌هاب برای میزبانی استفاده می‌کنم دلایل زیادی برای این انتخاب دارم، مثلا فعال کردن https برای دامین یا استفاده از cdnهای cloudflar یا محافظت در مقابل حمله‌هایی که ممکنه به سایت بشه، لود شدن سریع‌تر سایت و... و تمام این امکانات رو هم با استفاده از نسخه‌ی رایگان این سرویس می‌گیرم، البته اگر از سرور خودتون استفاده کنید این امکانات رو میتونید خودتون روی سرور فعال کنید، اما اگر دانش یا وقت کافی برای مدیریت سرور نداشته باشیم باز هم استفاده از سرویس‌هایی مثل cloudflare راه مطمین‌تری هست که میدونیم تقریبا به صورت تمام وقت فعال هستن و توسط افراد با تجربه‌ای هم مدیریت و اداره میشن.</p>
+<p>درایور پرینترهای cannon آزاد نیستند و کتابخانه‌های باینری تهیه شده توسط cannon برای معماری i386 هستند. پس اگر میخواهید از این پرینترها روی سیستم‌های ۶۴بیتی استفاده کنید، باید در ابتدا معماری چندگانه را فعال کنید و چند کتابخانه را نصب کنید:</p>
 
-<p>اما این مواردی که گفتم چه اهمیتی دارن؟ مثلا چرا باید مهم باشه که از https استفاده کنیم؟ بزارید به صورت ساده و خلاصه یه نگاه به تفاوت http و https بندازیم. وقتی از http استفاده می‌کنیم هر کسی که بین ما و سایت مورد نظر باشه میتونه محتوای ارسال و دریافت شده رو، شامل متن سایت، رمزهایی که وارد می‌کنیم، عکس‌هاو هرچیز دیگه‌ای رو میتونه ببینه و حتی تغییر بده. اما وقتی از https استفاده میکنیم داده‌های رد و بدل شده رمز نگاری میشه و برای افراد و کامپیوترهایی که بین ما و سایت موردنظرمون هستن غیرقابل فهم.</p>
+<pre><code class="language-bash"># amd64 only
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libstdc++6:i386 libxml2:i386 zlib1g:i386 libpopt0:i386
+</code></pre>
 
-<p>خوب چه کار کنیم که cloudflare رو به عنوان واسط بین دامین و گیت‌هاب فعال کنیم؟ </p>
+<p>اگر cups نصب نیست آن‌را نصب کنید:</p>
 
-<p>۱ - اول مراجعه به <a href="https://www.cloudflare.com/">cloudflare</a> و ساختن یک اکانت.</p>
+<pre><code class="language-bash">sudo apt-get install cups
+</code></pre>
 
-<p>۲ - وارد کردن نام سایت و کلیک بر روی begin scan</p>
+<p>درایورهای کنون را <a href="http://support-asia.canon-asia.com/contents/ASIA/EN/0100459601.html">دانلود</a> و از حالت فشرده خارج کنید:</p>
 
-<p><img src="images/2018-03-13-cloudflare1.png" alt="add site" id="addsite" /></p>
+<pre><code class="language-bash">wget http://gdlp01.c-wss.com/gds/6/0100004596 مستقمیا از طریق خط فرمان دریافت کنید
+tar -zxvf Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz/03/Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz
+</code></pre>
 
-<p>صبر کنید تا اسکن تمام شود، تمام dnsهای فعال روی سایت نمایش داده می‌شوند و dnsهای جدیدی به شما برای جایگزین کردن پیشنهاد می‌شود. به پنجره‌ مدیریت دامین خود بروید و dnsهای cloudflare را با dns های خودتان جایگزین کنید. باید بین چند دقیقه تا چند ساعت، صبر کنید تا dnsهای جدید بر روی دامین شما فعال شود. بعد از فعال شدنشنان، میتوانیم از این به بعد dnsهای خودمان را با استفاده از cloudflare مدیریت کنیم.</p>
+<p>درایور ۳۲ یا ۶۴ بیتی مورد نیاز را نصب کنید:</p>
 
-<p>برای مثال من ۲ رکورد A ساخته‌ام که به IPهای گیت هاب اشاره میکنند و یک cname برای یکی کردن آدرس سایت با و بدون www</p>
+<pre><code class="language-bash"> - 32-bit:
+sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/32-bit_Driver/Debian/*.deb
 
-<table>
-<col align="center" />
-<col align="left" />
-<col align="left" />
-<thead>
-<tr>
-	<th>type</th>
-	<th>name</th>
-	<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<td align="center">a</td>
-	<td align="left">site.com</td>
-	<td align="left">192.30.252.153</td>
-</tr>
-<tr>
-	<td align="center">a</td>
-	<td align="left">site.com</td>
-	<td align="left">192.30.252.154</td>
-</tr>
-<tr>
-	<td align="center">CNAME</td>
-	<td align="left">www</td>
-	<td align="left">site.com</td>
-</tr>
-</tbody>
-</table>
+ - 64-bit:
+sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
+</code></pre>
 
-<p>تمام شد، به همین سادگی. البته خیلی چیزهای بیشتری برای تنظیم کردن در پنل مدیریت هست که منتظر شما هستند.</p>
+<p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر</p>
+
+<pre><code>/usr/share/cups/model
+</code></pre>
+
+<p>نگاه میکنیم، هم‌نام یا شبیه‌ترین نام به مدل دستگاه خود را پیدا کنید.</p>
+
+<pre><code class="language-bash">grep -H ModelName /usr/share/cups/model/*.ppd | less
+...
+    /usr/share/cups/model/CNCUPSLBP6018CAPTS.ppd:*ModelName: "Canon LBP6000/LBP6018 CAPT (US)"
+</code></pre>
+
+<p>برای این مورد ما <code>CNCUPSLBP6018CAPTS.ppd</code> را که با مدل LBP6000 همخوانی دارد را انتخاب میکنیم.</p>
+
+<pre><code class="language-bash">sudo lpadmin -p LBP6000 -m CNCUPSLBP6018CAPTS.ppd -v ccp://localhost:59687
+sudo lpadmin -p LBP6000 -E
+sudo ccpdadmin -p LBP6000 -o /dev/usb/lp0
+</code></pre>
+
+<p>و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم</p>
+
+<pre><code class="language-bash">sudo update-rc.d ccpd defaults
+</code></pre>
+
+<p>گاهی اوقات ccpd هنگ میکند و queue تنها پیغام Processing since را نمایش می‌دهد و هیچ پرینتی صورت نمیگیرد، در این حالت برای پرینت گرفتن این دستورات را به ترتیب اجرا کنید یا یک فایل bash بسازید که تمام این دستورات را به ترتیب اجرا کند:</p>
+
+<pre><code class="language-bash">pkill -9 -x ccpd
+pkill -9 -x captmoncnabc
+/etc/init.d/ccpd start
+/etc/init.d/ccpd status
+</code></pre>
+
+<p>احتمالا برای اجرای اکثر دستورات بالا به sudo هم نیاز خواهید داشت.</p>
+
+<p>برای به اشتراک گذاشتن پرینتر در شبکه با کامپیوترهایی که از ویندوز استفاده میکنند هم samba را نصب کیند و این تغییرات را در تنظیمات آن اعمال کنید:</p>
+
+<pre><code>sudo gedit /etc/samba/smb.conf
+</code></pre>
+
+<p>در قسمت [printers] :</p>
+
+<pre><code>browseable = yes
+guest ok = yes
+</code></pre>
+
+<p>و samba را ری‌استارت کنید:</p>
+
+<pre><code>sudo service smbd restart
+sudo service nmbd restart
+</code></pre>
+
+<p>در setting سیستم، قسمت printer منوی server را انتخاب کنید و Publish shared printers connected to this server را فعال کنید، بر روی پرینتر نصب شده کلیک راست کنید و Shared را چک بزنید.</p>
 
             </section>
 
             <section class="meta">
-            <span>              دسته بندی:                <a href="/categories/اینترنت/">اینترنت</a>              برچسب‌ها:                <a href="/tags/cloudflare/">cloudflare</a>،&nbsp;                <a href="/tags/https/">https</a>،&nbsp;                <a href="/tags/گیت‌هاب/">گیت‌هاب</a>،&nbsp;                <a href="/tags/github/">github</a>            </span>
+            <span>              دسته بندی:                <a href="/categories/سخت-افزار/">سخت افزار</a>              برچسب‌ها:                <a href="/tags/cannon/">cannon</a>،&nbsp;                <a href="/tags/lbp6000/">lbp6000</a>،&nbsp;                <a href="/tags/لینوکس/">لینوکس</a>،&nbsp;                <a href="/tags/cups/">cups</a>،&nbsp;                <a href="/tags/samba/">samba</a>،&nbsp;                <a href="/tags/پرینتر/">پرینتر</a>،&nbsp;                <a href="/tags/اوبونتو/">اوبونتو</a>            </span>
             </section>
           </article>
           
@@ -110,21 +143,11 @@
           <section id="pager">
             <nav class="container">
             
-			        <a class="extend next" rel="next" href="/2018/11/weblog-with-mira-and-github/"><i>→</i><span>راه اندازی یک وبلاگ استاتیک با کمک میرا و گیت‌هاب</span></a>
 
 			      
             </nav>
           </section>
 <!-- /Paging -->
-          <section class="comments">
-            <script>
-              var idcomments_acct = 'b0a26c97865ca5233efed27ec742b491';
-              var idcomments_post_id;
-              var idcomments_post_url;
-            </script>
-            <span id="IDCommentsPostTitle" style="display:none"></span>
-            <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-          </section>
 				</div>
 			</div>
 			<div id="beta">
