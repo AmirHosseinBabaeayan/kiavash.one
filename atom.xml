@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-03-17T19:28:03+0330</updated>
+  <updated>2018-03-17T19:32:18+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -83,7 +83,7 @@ Priority        : 10
 Description     : هر توضیحی که دوست دارید
 </code></pre>
 
-<p><img src="2018-3-17-mailgun-002.png" alt="add route" id="addroute" /></p>
+<p><img src="/images/2018-3-17-mailgun-002.png" alt="add route" id="addroute" /></p>
 
 <p>قدم اول تموم شد، از این به بعد هر ایمیلی که به آدرس custoam_mail@kiavash.one فرستاده بشه رو من توی اینباکس google_account@gmail.com دریافت می‌کنیم.</p>
 
