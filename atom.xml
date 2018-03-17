@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-03-17T01:25:15+0330</updated>
+  <updated>2018-03-17T19:17:14+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -14,6 +14,106 @@
     
   <generator>Mira</generator>
 
+  
+  <entry>
+    <title>هک کردن جی‌میل برای استفاده کردن روی دامنه شخصی با کمک mailgun</title>
+    <link href="http://kiavash.one/2018/17/hacking-gmail-to-use-custom-domains-for-free-with-mailgun/"/>
+    <id>http://kiavash.one/2018/17/hacking-gmail-to-use-custom-domains-for-free-with-mailgun/</id>
+
+    <published>2018-03-17T16:41:42+0330</published>
+    <updated>2018-03-17T16:41:42+0330</updated>
+
+    <content type="html"><![CDATA[<a name="more"></a>
+<p>من فکر میکنم که جی‌میل سرویس جذاب و کاربردی برای دریافت و ارسال و دسته بندی ایمیل‌ها هست، سریع هست، با سرویس‌های دیگه گوگل مثل درایو به خوبی یکپارچه شده و به جز برنامه استانداردی که برای مدیریت ایمل‌ها داره، میشه از <a href="http://www.google.com/inbox/">inbox</a> هم برای مدیریت ایمیل‌ها استفاده کرد. در کل پر از خوبیای ریز و درشت و هست، البته به جز اون قسمتی که به گوگل امکان بیشتری میدیم که ثانیه به ثانیه زندگیمون رو بیشتر نظارت کنه.</p>
+
+<p>از اونطرف داشتن یه آدرس ایمیل روی دامین شخصی هم جذاب هست، و اگر بخواید از ایمیل گوگل روی دامین شخصی خودتون استفاده کنید باید <a href="https://www.google.com/work/apps/business/">سرویس گوگل بیزینس</a> رو با قیمت ماهیانه ۵ تا ۱۰دلار بخرید که برای اکثر کاربران امکانات گوگل بیزینس مورد نیاز نیستن و در نهایت تمام امکانات سرویس‌های شخصی رو هم، مثل inbox، دریافت نمیکنید.</p>
+
+<p>بگذریم، به هرحال راه‌هایی هست که بشه از اکانت جی‌میل به صورت رایگان روی دامین شخصی استفاده کرد، یکی از این راه‌ها استفاده از <a href="https://mailgun.com/">mailgun</a> هست.</p>
+
+<p><img src="/images/2018-3-17-mailgun-000.png" alt="mailgun" id="mailgun" /></p>
+
+<p>mailgun خودش رو به این صورت معرفی میکنه:</p>
+
+<blockquote>
+  <p>powerful APIs that enable you to send, receive and track email effortlessly.</p>
+  
+  <p>API های قدرتمند که شما را قادر می سازد، بدون زحمت ایمیل‌ها را ارسال، دریافت و دنبال کنید </p>
+</blockquote>
+
+<p>با خواندن معرفی این سرویس فکر کنم متوجه شده باشید که چطور قراره از جی‌میل روی دامنه شخصی به صورت رایگان استفاده کنیم و اگر هم هنوز متوجه نشدید مطمینا براتون جالب خواهد بود که یاد بگیرید یک توسعه دهنده ابزار چطور با هک کردن ابزار موجود دم دستش یه چیز جدید میسازه. به شکل ساده mailgun دو جز داره که بهمون اجازه میده کاری که میخوایم رو انجام بدیم، یک سرویس فوروارد کردن ایمیل و یک سرور SMTP.</p>
+
+<h2 id="mailgun">تنظیم mailgun</h2>
+
+<p>در mailgun با استفاده از اکانت جی‌میل <a href="https://mailgun.com/signup">ثبت نام</a> میکنیم، یک ایمیل برای تایید ثبت نام برامون فرستاده میشه که روی لینک تایید کلیک میکنیم و به mailgun لاگین میکنیم. وارد داشبورد کاربریمون میشیم، در منوی بالا وارد <a href="https://app.mailgun.com/app/domains">قسمت Domains</a> میشیم و روی <a href="https://app.mailgun.com/app/domains/new">Add New Domain</a> کلیک میکنیم و آدرس دامنه رو وارد میکنیم</p>
+
+<p><img src="/images/2018-3-17-mailgun-001.png" alt="add domain in mail gun" id="adddomaininmailgun" /></p>
+
+<p>بر اساس دستور العملی که سایت بهمون میده، DNS های دامنه‌مون رو تنظیم میکنیم. من از cloudflare برای مدیریت DNSهاس دامنه‌م استفاده میکنم به شکل خلاصه و سریع کارهایی که باید انجام بدیم رو در ادامه می‌نویسم</p>
+
+<p><strong>۱-</strong> یک cname با این مشخصات بسازید</p>
+
+<pre><code>CNAME record &gt; Name = email, Value = mailgun.org, TTL = Automatic
+</code></pre>
+
+<p><strong>۲-</strong> دو رکورد MX با این مشخصات اضافه میکنیم</p>
+
+<pre><code>Name = domain.com (no www), value = mxa.mailgun.org, Priority = 10
+Name = domain.com (no www), value = mxb.mailgun.org Priority = 10
+</code></pre>
+
+<p>به جای domain.com باید نام دامنه خودتون رو جایگزین کنید.</p>
+
+<p><strong>۳-</strong> دو رکورد TXT هم اضافه میکنیم</p>
+
+<pre><code>Name= domain.com (no www), value = v=spf1…
+Name = smtp._domainkey, value = k=rsa;…
+</code></pre>
+
+<p>اینجا هم باید در خط اول اسم دامنه خودتون رو به جای domain.com بنویسید و آخر خط دوم هم بعد از rsa; به جای ... کلیدی که خود سایت بهتون داده رو اضافه کنید.</p>
+
+<p>حالا باید صبر کنیم تا DNS ها تنظیم بشن که بین چند دقیقه تا چند ساعت ممکنه وقت بگیره. برای فعال شدن دامنه روی mailgun باید منتظر این تنظیم شدن بمونیم. بعد از تنظیم شدنشون برگردید به mailgun و دامنه رو فعال کنید.</p>
+
+<p>حالا باید وارد قسمت Routes بشیم و روی دکمه‌ی Create Route در قسمت بالای صفحه کلیک میکنم، فیلدها رو به این صورت پر میکنیم:</p>
+
+<pre><code>Expression Type : Match Recipient
+Recipient       : custom_mail@kiavash.one
+Action          : Forward
+                  google_account@gmail.com
+Priority        : 10
+Description     : هر توضیحی که دوست دارید
+</code></pre>
+
+<p><img src="2018-3-17-mailgun-002.png" alt="add route" id="addroute" /></p>
+
+<p>قدم اول تموم شد، از این به بعد هر ایمیلی که به آدرس custoam_mail@kiavash.one فرستاده بشه رو من توی اینباکس google_account@gmail.com دریافت می‌کنیم.</p>
+
+<h2>ارسال ایمیل</h2>
+
+<p>در داشبورد دامنه وارد قسمت <a href="https://app.mailgun.com/app/domains/site.com/credentials">Manage SMTP credentials</a> میشیم و روی New SMTP Credential کلیک میکنم و آدرس ایمیلی رو که میخوایم میسازیم، مثلا custom_mail@kiavash.one و یک پسور هم براش تنظیم میکنیم.</p>
+
+<p>بعد توی قسمت تنظیمات gmail وارد تب <a href="https://mail.google.com/mail/u/0/#settings/accounts">Accounts and Import</a> میشیم و توی قسمت Send mail as روی Add another email address you own کلیک میکنیم و آدرس ایمیلی که میخوایم برای فرستادن ایمیل ها ازش استفاده کنیم و توی مرحله قبل ساختیم رو وارد میکنیم.</p>
+
+<p><img src="/images/2018-3-17-mailgun-003.png" alt="add gmail" id="addgmail" /></p>
+
+<p>و تنظیمات SMTP رو وارد میکنیم</p>
+
+<p><img src="/images/2018-3-17-mailgun-004.png" alt="set smtp" id="setsmtp" /></p>
+
+<pre><code>Server: smtp.mailgun.org
+Port: 587
+Username: The full email address, e.g. “custom_mail@kiavash.one”
+Password: YOUR PASSWORD set in mailgun
+</code></pre>
+
+<p>روی Add Account کلیک کنید، تمام شد. از سرویس رایگان ایمیل دامنه شخصی تا سقف ۱۰،۰۰۰ ایمیل در ماه لذت ببرید.</p>
+]]></content>
+
+    <summary>
+    &lt;p&gt;من فکر میکنم که جی‌میل سرویس جذاب و کاربردی برای دریافت و ارسال و دسته بندی ایمیل‌ها هست، سریع هست، با سرویس‌های دیگه گوگل مثل درایو به خوبی یکپارچه شده و به جز برنامه استانداردی که برای مدیریت ایمل‌ها داره، میشه از inbox هم برای مدیریت ایمیل‌ها استفاده کرد. در کل پر از خوبیای ریز و درشت و هست، البته به جز اون قسمتی که به گوگل امکان بیشتری میدیم که ثانیه به ثانیه زندگیمون رو بیشتر نظارت کنه.
+
+از اونطرف داشتن یه آدرس ایمیل روی دامین شخصی هم جذاب هست، و اگر بخواید از ایمیل گوگل روی دامین شخصی خودتون استفاده کنید باید سرویس گوگل بیزینس رو با قیمت ماهیانه ۵ تا ۱۰دلار بخرید که برای اکثر کاربران امک&lt;/p&gt;
+    </summary>
+  </entry>
   
   <entry>
     <title>اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</title>

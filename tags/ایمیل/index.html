@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>تجربه باز | بایگانی: اینترنت</title>
+        <title>تجربه باز | بایگانی: ایمیل</title>
         <meta name="keywords" content="">
         <meta property="og:type" content="website">
         <meta property="og:title" content="تجربه باز">
@@ -138,70 +138,6 @@ Password: YOUR PASSWORD set in mailgun
 
             <section class="meta">
             <span>              دسته بندی:                <a href="/categories/اینترنت/">اینترنت</a>              برچسب‌ها:                <a href="/tags/ایمیل/">ایمیل</a>،&nbsp;                <a href="/tags/gmail/">gmail</a>،&nbsp;                <a href="/tags/custom-domain/">custom domain</a>،&nbsp;                <a href="/tags/دامین-شخصی/">دامین شخصی</a>،&nbsp;                <a href="/tags/mailgun/">mailgun</a>            </span>
-            </section>
-          </article>
-          
-          <article id="cloudflare" itemscope itemprop="blogPost">
-            <h1 class="entry-title" itemprop="name">
-            <a href="/2018/13/cloudflare/" itemprop="url">اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</a>
-            </h1>
-            
-            <div class="entry-date"><time datetime="2018-03-13 21:54:13" itemprop="datePublished">سه‌شنبه‌، ۲۲&nbsp;اسفند&nbsp;۱۳۹۶</time></div>
-        	  
-            <section class="entry-body">
-            <a name="more"></a>
-<p>من برای مدیریت dns سایت از cloudflare استفاده می‌کنم و از اونجایی که این سایت رو به صورت استاتیک می‌سازم و از قابلیت صفحه‌های گیت‌هاب برای میزبانی استفاده می‌کنم دلایل زیادی برای این انتخاب دارم، مثلا فعال کردن https برای دامین یا استفاده از cdnهای cloudflar یا محافظت در مقابل حمله‌هایی که ممکنه به سایت بشه، لود شدن سریع‌تر سایت و... و تمام این امکانات رو هم با استفاده از نسخه‌ی رایگان این سرویس می‌گیرم، البته اگر از سرور خودتون استفاده کنید این امکانات رو میتونید خودتون روی سرور فعال کنید، اما اگر دانش یا وقت کافی برای مدیریت سرور نداشته باشیم باز هم استفاده از سرویس‌هایی مثل cloudflare راه مطمین‌تری هست که میدونیم تقریبا به صورت تمام وقت فعال هستن و توسط افراد با تجربه‌ای هم مدیریت و اداره میشن.</p>
-
-<p>اما این مواردی که گفتم چه اهمیتی دارن؟ مثلا چرا باید مهم باشه که از https استفاده کنیم؟ بزارید به صورت ساده و خلاصه یه نگاه به تفاوت http و https بندازیم. وقتی از http استفاده می‌کنیم هر کسی که بین ما و سایت مورد نظر باشه میتونه محتوای ارسال و دریافت شده رو، شامل متن سایت، رمزهایی که وارد می‌کنیم، عکس‌هاو هرچیز دیگه‌ای رو میتونه ببینه و حتی تغییر بده. اما وقتی از https استفاده میکنیم داده‌های رد و بدل شده رمز نگاری میشه و برای افراد و کامپیوترهایی که بین ما و سایت موردنظرمون هستن غیرقابل فهم.</p>
-
-<p>خوب چه کار کنیم که cloudflare رو به عنوان واسط بین دامین و گیت‌هاب فعال کنیم؟ </p>
-
-<p>۱ - اول مراجعه به <a href="https://www.cloudflare.com/">cloudflare</a> و ساختن یک اکانت.</p>
-
-<p>۲ - وارد کردن نام سایت و کلیک بر روی begin scan</p>
-
-<p><img src="images/2018-03-13-cloudflare1.png" alt="add site" id="addsite" /></p>
-
-<p>صبر کنید تا اسکن تمام شود، تمام dnsهای فعال روی سایت نمایش داده می‌شوند و dnsهای جدیدی به شما برای جایگزین کردن پیشنهاد می‌شود. به پنجره‌ مدیریت دامین خود بروید و dnsهای cloudflare را با dns های خودتان جایگزین کنید. باید بین چند دقیقه تا چند ساعت، صبر کنید تا dnsهای جدید بر روی دامین شما فعال شود. بعد از فعال شدنشنان، میتوانیم از این به بعد dnsهای خودمان را با استفاده از cloudflare مدیریت کنیم.</p>
-
-<p>برای مثال من ۲ رکورد A ساخته‌ام که به IPهای گیت هاب اشاره میکنند و یک cname برای یکی کردن آدرس سایت با و بدون www</p>
-
-<table>
-<col align="center" />
-<col align="left" />
-<col align="left" />
-<thead>
-<tr>
-	<th>type</th>
-	<th>name</th>
-	<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<td align="center">a</td>
-	<td align="left">site.com</td>
-	<td align="left">192.30.252.153</td>
-</tr>
-<tr>
-	<td align="center">a</td>
-	<td align="left">site.com</td>
-	<td align="left">192.30.252.154</td>
-</tr>
-<tr>
-	<td align="center">CNAME</td>
-	<td align="left">www</td>
-	<td align="left">site.com</td>
-</tr>
-</tbody>
-</table>
-
-<p>تمام شد، به همین سادگی. البته خیلی چیزهای بیشتری برای تنظیم کردن در پنل مدیریت هست که منتظر شما هستند.</p>
-
-            </section>
-
-            <section class="meta">
-            <span>              دسته بندی:                <a href="/categories/اینترنت/">اینترنت</a>              برچسب‌ها:                <a href="/tags/cloudflare/">cloudflare</a>،&nbsp;                <a href="/tags/https/">https</a>،&nbsp;                <a href="/tags/گیت‌هاب/">گیت‌هاب</a>،&nbsp;                <a href="/tags/github/">github</a>            </span>
             </section>
           </article>
           
