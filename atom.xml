@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>تجربه باز</title>
 
-  <link href="http://kiavash.one/feed.xml" rel="self"/>
+  <link href="http://kiavash.one/atom.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-03-18T16:35:36+0330</updated>
+  <updated>2018-03-18T16:47:20+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -112,8 +112,23 @@ Password: YOUR PASSWORD set in mailgun
     &lt;p&gt;من فکر میکنم که جی‌میل سرویس جذاب و کاربردی برای دریافت و ارسال و دسته بندی ایمیل‌ها هست، سریع هست، با سرویس‌های دیگه گوگل مثل درایو به خوبی یکپارچه شده و به جز برنامه استانداردی که برای مدیریت ایمل‌ها داره، میشه از inbox هم برای مدیریت ایمیل‌ها استفاده کرد. در کل پر از خوبیای ریز و درشت و هست، البته به جز اون قسمتی که به گوگل امکان بیشتری میدیم که ثانیه به ثانیه زندگیمون رو بیشتر نظارت کنه.
 
 از اونطرف داشتن یه آدرس ایمیل روی دامین شخصی هم جذاب هست، و اگر بخواید از ایمیل گوگل روی دامین شخصی خودتون استفاده کنید باید سرویس گوگل بیزینس رو با قیمت ماهیانه ۵ تا ۱۰دلار بخرید که برای اکثر کاربران امک&lt;/p&gt;
-    </summary>
-  </entry>
+    </summary>    
+    
+      <tags term="ایمیل" scheme="http://kiavash.one/tags/ایمیل/" />
+    
+      <tags term="gmail" scheme="http://kiavash.one/tags/gmail/" />
+    
+      <tags term="custom domain" scheme="http://kiavash.one/tags/custom-domain/" />
+    
+      <tags term="دامین شخصی" scheme="http://kiavash.one/tags/دامین-شخصی/" />
+    
+      <tags term="mailgun" scheme="http://kiavash.one/tags/mailgun/" />
+    
+        
+    
+      <categories term="اینترنت" scheme="http://kiavash.one/categories/اینترنت/" />
+    
+      </entry>
   
   <entry>
     <title>اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</title>
@@ -175,8 +190,21 @@ Password: YOUR PASSWORD set in mailgun
 
     <summary>
     &lt;p&gt;من برای مدیریت dns سایت از cloudflare استفاده می‌کنم و از اونجایی که این سایت رو به صورت استاتیک می‌سازم و از قابلیت صفحه‌های گیت‌هاب برای میزبانی استفاده می‌کنم دلایل زیادی برای این انتخاب دارم، مثلا فعال کردن https برای دامین یا استفاده از cdnهای cloudflar یا محافظت در مقابل حمله‌هایی که ممکنه به سایت بشه، لود شدن سریع‌تر سایت و... و تمام این امکانات رو هم با استفاده از نسخه‌ی رایگان این سرویس می‌گیرم، البته اگر از سرور خودتون استفاده کنید این امکانات رو میتونید خودتون روی سرور فعال کنید، اما اگر دانش یا وقت کافی برای مدیریت سرور نداشته باشیم باز هم استفاده از سرویس‌هایی مثل cloudflare راه م&lt;/p&gt;
-    </summary>
-  </entry>
+    </summary>    
+    
+      <tags term="cloudflare" scheme="http://kiavash.one/tags/cloudflare/" />
+    
+      <tags term="https" scheme="http://kiavash.one/tags/https/" />
+    
+      <tags term="گیت‌هاب" scheme="http://kiavash.one/tags/گیت‌هاب/" />
+    
+      <tags term="github" scheme="http://kiavash.one/tags/github/" />
+    
+        
+    
+      <categories term="اینترنت" scheme="http://kiavash.one/categories/اینترنت/" />
+    
+      </entry>
   
   <entry>
     <title>راه اندازی یک وبلاگ استاتیک با کمک میرا و گیت‌هاب</title>
@@ -326,8 +354,19 @@ tag:
 
     <summary>
     &lt;p&gt;شاید پیش اومده که بخواید مطلبی رو توی اینترنت منتشر کنید، حالا چه به عنوان وبلاگ، صفحات معرفی و راهنمای پروژه، صفحات معرفی شخصی و رزومه، یک کتاب آنلاین یا هر چیز دیگه‌ای. اگر همچین تجربه‌ای رو داشتید احتمالا با موضوعاتی مثل خرید هاست، انتقال فایل‌ها، بک‌آپ گرفتن، خرید دامنه، پایگاه داده یا همون دیتابیس ها و خیلی اسامی دیگه شبیه به این‌ها مواجه شده باشید، این پست قصد داره که یه راه حل برای خلاصی از تمام این موضوعات رو ارائه کنه و اگر هم که تا امروز درگیر این مسایل نشدید که قصد داره جلوی مواجهه و درگیریتون رو با خیلی از مسایل فنی انتشار سایت روی اینترنت رو بگیره. و البته با حذف این موارد و نگهدا&lt;/p&gt;
-    </summary>
-  </entry>
+    </summary>    
+    
+      <tags term="میرا" scheme="http://kiavash.one/tags/میرا/" />
+    
+      <tags term="انتشار استاتیک" scheme="http://kiavash.one/tags/انتشار-استاتیک/" />
+    
+      <tags term="سایت ساز استاتیک" scheme="http://kiavash.one/tags/سایت-ساز-استاتیک/" />
+    
+        
+    
+      <categories term="میرا" scheme="http://kiavash.one/categories/میرا/" />
+    
+      </entry>
   
   <entry>
     <title>نصب پرینتر cannaon lbp6000 برای دبیان/اوبونتو</title>
@@ -436,8 +475,27 @@ sudo apt-get install cups
 
 wget http://gdlp01.c-wss.com/gds/6/0100004596 مستقمیا از طریق خط فرمان دریافت کنید
 tar -zxvf Linux_C&lt;/p&gt;
-    </summary>
-  </entry>
+    </summary>    
+    
+      <tags term="cannon" scheme="http://kiavash.one/tags/cannon/" />
+    
+      <tags term="lbp6000" scheme="http://kiavash.one/tags/lbp6000/" />
+    
+      <tags term="لینوکس" scheme="http://kiavash.one/tags/لینوکس/" />
+    
+      <tags term="cups" scheme="http://kiavash.one/tags/cups/" />
+    
+      <tags term="samba" scheme="http://kiavash.one/tags/samba/" />
+    
+      <tags term="پرینتر" scheme="http://kiavash.one/tags/پرینتر/" />
+    
+      <tags term="اوبونتو" scheme="http://kiavash.one/tags/اوبونتو/" />
+    
+        
+    
+      <categories term="سخت افزار" scheme="http://kiavash.one/categories/سخت-افزار/" />
+    
+      </entry>
   
   <entry>
     <title>سلام دنیا از دریچه‌ی میرا</title>
@@ -465,7 +523,16 @@ tar -zxvf Linux_C&lt;/p&gt;
     &lt;p&gt;من اهل تجربه کردن هر چیز جدیدی هستم، حتی شاید بشه گفت که به شکلی معتاد تست کردن باشم، البته اکثرا بعد از مدتی به خاطر تکرار نشدن از یادم میرن و از اونجایی که هیچ وقت هم دیگه نیازی بهشون پیدا نمیکنم چندان برام مهم نیست، اما خیلی وقت‌ها هم بوده که چیزهایی که بارها بهشون نیاز پیدا کردم یا کس دیگه‌ای براش سوال شده بوده رو فراموش کرده بودم. سالها بود که تصمیم داشتم مواردی که رو به نظرم کاربردی‌تر میان رو به شکل یک وبلاگ بنویسم تا هم آرشیوی برای خودم باشه و همینکه شاید به کار یکی دیگه بیاد.
 
 نهایتا تصمیم گرفتم که یک وبلاگ رو به شکل استاتیک برای این کار بسازم، مدتی رو میگشتم و دنبال گزینه برای ساختن &lt;/p&gt;
-    </summary>
-  </entry>
+    </summary>    
+    
+      <tags term="میرا" scheme="http://kiavash.one/tags/میرا/" />
+    
+      <tags term="سلام دنیا" scheme="http://kiavash.one/tags/سلام-دنیا/" />
+    
+        
+    
+      <categories term="میرا" scheme="http://kiavash.one/categories/میرا/" />
+    
+      </entry>
   
 </feed>
