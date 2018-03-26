@@ -96,11 +96,11 @@ sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
 <pre><code class="language-bash">sudo lpadmin -p LBP6000 -m CNCUPSLBP6018CAPTS.ppd -v ccp://localhost:59687
 sudo lpadmin -p LBP6000 -E
 sudo ccpdadmin -p LBP6000 -o /dev/usb/lp0
-</code></pre>
+```
+و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم
 
-<p>و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم</p>
-
-<pre><code class="language-bash">sudo update-rc.d ccpd defaults
+``` bash
+sudo update-rc.d ccpd defaults
 </code></pre>
 
 <p>گاهی اوقات ccpd هنگ میکند و queue تنها پیغام Processing since را نمایش می‌دهد و هیچ پرینتی صورت نمیگیرد، در این حالت برای پرینت گرفتن این دستورات را به ترتیب اجرا کنید یا یک فایل bash بسازید که تمام این دستورات را به ترتیب اجرا کند:</p>
