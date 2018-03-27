@@ -95,8 +95,7 @@ sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
 
 <p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر</p>
 
-<pre><code>/usr/share/cups/model
-</code></pre>
+<pre><code>/usr/share/cups/model</code></pre>
 
 <p>نگاه میکنیم، هم‌نام یا شبیه‌ترین نام به مدل دستگاه خود را پیدا کنید.</p>
 
@@ -129,20 +128,17 @@ pkill -9 -x captmoncnabc
 
 <p>برای به اشتراک گذاشتن پرینتر در شبکه با کامپیوترهایی که از ویندوز استفاده میکنند هم samba را نصب کیند و این تغییرات را در تنظیمات آن اعمال کنید:</p>
 
-<pre><code>sudo gedit /etc/samba/smb.conf
-</code></pre>
+<pre><code>sudo gedit /etc/samba/smb.conf</code></pre>
 
 <p>در قسمت [printers] :</p>
 
 <pre><code>browseable = yes
-guest ok = yes
-</code></pre>
+guest ok = yes</code></pre>
 
 <p>و samba را ری‌استارت کنید:</p>
 
 <pre><code>sudo service smbd restart
-sudo service nmbd restart
-</code></pre>
+sudo service nmbd restart</code></pre>
 
 <p>در setting سیستم، قسمت printer منوی server را انتخاب کنید و Publish shared printers connected to this server را فعال کنید، بر روی پرینتر نصب شده کلیک راست کنید و Shared را چک بزنید.</p>
 
