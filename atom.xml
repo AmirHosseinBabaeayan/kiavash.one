@@ -5,7 +5,11 @@
   <link href="http://kiavash.one/atom.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
+<<<<<<< HEAD
   <updated>2018-04-07T01:05:09+0330</updated>
+=======
+  <updated>2018-03-27T18:48:05+0330</updated>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
   <id>http://kiavash.one</id>
   
   <author>
@@ -30,7 +34,11 @@
 
 <p>مارک داون در اصل یه فرمت برچسب زنی متن مثل خیلی از زبان‌های برچسب زنی دیگه مثل POD, html، ReStructuredText، Grutatext و EtText هست، اما با یک سری تفاوت‌های ساختاری خیلی بزرگ توی فلسفه‌ش.</p>
 
+<<<<<<< HEAD
 <p><img src="http://kiavash.one//images/2018-3-18-markdown.png" alt="markdown" title="markdown" id="markdown" /></p>
+=======
+<p><img id="markdown" src="/images/2018-3-18-markdown.png" alt="markdown" title="markdown" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h3 id="markdown">فلسفه Markdown</h3>
 
@@ -54,7 +62,11 @@
 
 <p><a href="http://fletcherpenney.net/multimarkdown/">مالتی مارک داون</a> در سال ۲۰۰۵ توسط Fletcher T. Penney معرفی شد و در پایه و مفهوم تقریبا همون مارک داون هست با همون فلسفه با چند تفاوت، (۱)برنامه‌ی تبدیل کننده متن با perl و بر پایه‌ی برنامه اصلی مارک داون نوشته شد اما به جز html امکان تبدیل متن به فرمت‌های دیگه مثل pdf, latex, ompl, openDocument, word رو هم داره و (۲)دستور نگارشی که همه‌ی خاصیت‌های مارک‌داون رو به همراه چندتا قابلیت بیشتر مثل فرمت جدول‌ها و بلوک‌های کد و چیزهایی مثل این‌ها که این روزها جاهای زیادی مثل گیت هاب میبینیم رو داره.</p>
 
+<<<<<<< HEAD
 <p><img src="http://kiavash.one//images/2018-3-18-markdown2.png" alt="markdown" title="markdown" id="markdown" /></p>
+=======
+<p><img id="markdown" src="/images/2018-3-18-markdown2.png" alt="markdown" title="markdown" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h2>دستور نگارش مارک‌داون</h2>
 
@@ -93,8 +105,12 @@
 &lt;h2&gt;سربرگ دو&lt;h2&gt;
 &lt;h3&gt;سربرگ سه&lt;h3&gt;
 ...
+<<<<<<< HEAD
 &lt;h6&gt;سربرگ شش&lt;/h6&gt;
 </code></pre>
+=======
+&lt;h6&gt;سربرگ شش&lt;/h6&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> نقل قول</h4>
 
@@ -113,15 +129,23 @@
 &lt;p&gt;
 ادامه نقل قول در پاراگراف دوم 
 &lt;/p&gt;
+<<<<<<< HEAD
 &lt;/blockquote&gt;
 </code></pre>
+=======
+&lt;/blockquote&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>مارک‌داون به شدت ساده‌گیر است و میتوان پاراگراف را مانند مثال بالا در چندین خط جدا از هم یا به شکل مثال پایین به صورت متوالی نوشت</p>
 
 <pre><code>&gt; این یک نقل قول در ۲پاراگراف است. نقل قول‌ها برای نمایش متنی سخن دیگران یا ارجاع دادن به مطالبی از منابع متفاوت و خارج از متن اصلی است
 
+<<<<<<< HEAD
 &gt; ادامه نقل قول در پاراگراف دوم 
 </code></pre>
+=======
+&gt; ادامه نقل قول در پاراگراف دوم </code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>همچنین در هر نقل قول میتوان از سایر اجزای مارک‌داون شامل نقل قول، سربرگ‌ها لیست ها و بلوک‌های کد استفاده کرد</p>
 
@@ -134,8 +158,12 @@
 &gt;1. آیتم یک
 &gt;2. آیتم دوم
 &gt;
+<<<<<<< HEAD
 &gt;   return shell_exec("echo $input | $markdown_script"); [بلوک کد]
 </code></pre>
+=======
+&gt;   return shell_exec("echo $input | $markdown_script"); [بلوک کد]</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> لیست‌ها</h4>
 
@@ -155,6 +183,7 @@
 
 1. آبی
 2. قرمز
+<<<<<<< HEAD
 3. سبز
 </code></pre>
 
@@ -162,6 +191,13 @@
 
 <pre><code>۱۳۹۶\. سال تولد
 </code></pre>
+=======
+3. سبز</code></pre>
+
+<p>اگر بخواهید لیست اعدادتان را بدون ترتیب بسازید باید از یک \ قبل از نقطه استفاده کنید</p>
+
+<pre><code>۱۳۹۶\. سال تولد</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> کد و بلوک‌های کد</h4>
 
@@ -175,8 +211,12 @@
 &lt;pre&gt;&lt;code&gt;
 code block
 block
+<<<<<<< HEAD
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
+=======
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>در مالتی مارک‌داون شیوه‌ی دیگری هم برای نوشتن بلوک‌های کد مشخص شد که استفاده از سه ` متوالی در ابتدا و انتهای هر کد هست</p>
 
@@ -190,8 +230,12 @@ block
 بلوک کد
 خط کد
 ادامه
+<<<<<<< HEAD
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
+=======
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> خطوط افقی / جدا کننده‌ها</h4>
 
@@ -205,8 +249,12 @@ block
 
 - - -
 
+<<<<<<< HEAD
 ---------------------------------------
 </code></pre>
+=======
+---------------------------------------</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> لینک‌ها</h4>
 
@@ -224,8 +272,12 @@ block
 an example&lt;/a&gt; inline link.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://example.net/"&gt;This link&lt;/a&gt; has no
+<<<<<<< HEAD
 title attribute.&lt;/p&gt;
 </code></pre>
+=======
+title attribute.&lt;/p&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>و لینک های ارجاعی نیز ساختاری به این صورت دارند</p>
 
@@ -242,22 +294,34 @@ This is [an example] [id] reference-style link.
 
 &lt;p&gt;This is &lt;a href="http://example.com/" title="Optional Title Here"&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;ادامه متن و متن و متن و متن.&lt;/p&gt;
 </code></pre>
+=======
+&lt;p&gt;ادامه متن و متن و متن و متن.&lt;/p&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>همچنین لینک‌های ارجاعی رو به این صورت هم میتوان نوشت</p>
 
 <pre><code>my name is [kiavash][]
 
+<<<<<<< HEAD
 [kiavash]: https://kiavash.one/
 </code></pre>
+=======
+[kiavash]: https://kiavash.one/</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> لینک‌های خودکار</h4>
 
 <p>با قرار دادن آدرس‌ها بین دو علامت &lt; و > در متن به صورت لینک به نمایش در میایند</p>
 
+<<<<<<< HEAD
 <pre><code>&lt;https://kiavash.one&gt;
 </code></pre>
+=======
+<pre><code>&lt;https://kiavash.one&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> عکس‌ها</h4>
 
@@ -265,15 +329,23 @@ This is [an example] [id] reference-style link.
 
 <pre><code>![Alt text](/path/to/img.jpg)
 
+<<<<<<< HEAD
 ![Alt text](/path/to/img.jpg "Optional title")
 </code></pre>
+=======
+![Alt text](/path/to/img.jpg "Optional title")</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>و به صورت ارجاعی</p>
 
 <pre><code>![Alt text][id]
 
+<<<<<<< HEAD
 [id]: url/to/image  "Optional title attribute"
 </code></pre>
+=======
+[id]: url/to/image  "Optional title attribute"</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> حروف مایل</h4>
 
@@ -282,8 +354,12 @@ This is [an example] [id] reference-style link.
 <pre><code>*متن مایل*
 _متن مایل_
 
+<<<<<<< HEAD
 &lt;em&gt;متن مایل&lt;/em&gt;
 </code></pre>
+=======
+&lt;em&gt;متن مایل&lt;/em&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <h4>> حروف پررنگ</h4>
 
@@ -292,8 +368,12 @@ _متن مایل_
 <pre><code>**متن پررنگ**
 __متن پررنگ__
 
+<<<<<<< HEAD
 &lt;strong&gt;متن پررنگ&lt;/strong&gt;
 </code></pre>
+=======
+&lt;strong&gt;متن پررنگ&lt;/strong&gt;</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 ]]></content>
 
     <summary>
@@ -331,7 +411,11 @@ __متن پررنگ__
 
 <p>بگذریم، به هرحال راه‌هایی هست که بشه از اکانت جی‌میل به صورت رایگان روی دامین شخصی استفاده کرد، یکی از این راه‌ها استفاده از <a href="https://mailgun.com/">mailgun</a> هست. و تفاوت اصلیش با خیلی از روش‌های دیگه این هست که نیاز نداریم سرور ایمیل رو خودمون اجرا یا مدیریت کنیم و فقط ثبت کردن یک دامنه شخصی برامون کافیه و هزینه‌ی هاست یا سرور رو از دوش خودمون برمیداریم.</p>
 
+<<<<<<< HEAD
 <p><img src="http://kiavash.one//images/2018-3-17-mailgun-000.png" alt="mailgun" id="mailgun" /></p>
+=======
+<p><img id="mailgun" src="/images/2018-3-17-mailgun-000.png" alt="mailgun" title="" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>mailgun خودش رو به این صورت معرفی میکنه:</p>
 
@@ -347,28 +431,44 @@ __متن پررنگ__
 
 <p>در mailgun با استفاده از اکانت جی‌میل <a href="https://mailgun.com/signup">ثبت نام</a> میکنیم، یک ایمیل برای تایید ثبت نام برامون فرستاده میشه که روی لینک تایید کلیک میکنیم و به mailgun لاگین میکنیم. وارد داشبورد کاربریمون میشیم، در منوی بالا وارد <a href="https://app.mailgun.com/app/domains">قسمت Domains</a> میشیم و روی <a href="https://app.mailgun.com/app/domains/new">Add New Domain</a> کلیک میکنیم و آدرس دامنه رو وارد میکنیم</p>
 
+<<<<<<< HEAD
 <p><img src="http://kiavash.one//images/2018-3-17-mailgun-001.png" alt="add domain in mail gun" id="adddomaininmailgun" /></p>
+=======
+<p><img id="adddomaininmailgun" src="/images/2018-3-17-mailgun-001.png" alt="add domain in mail gun" title="" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>بر اساس دستور العملی که سایت بهمون میده، DNS های دامنه‌مون رو تنظیم میکنیم. من از cloudflare برای مدیریت DNSهاس دامنه‌م استفاده میکنم به شکل خلاصه و سریع کارهایی که باید انجام بدیم رو در ادامه می‌نویسم</p>
 
 <p><strong>۱-</strong> یک cname با این مشخصات بسازید</p>
 
+<<<<<<< HEAD
 <pre><code>CNAME record &gt; Name = email, Value = mailgun.org, TTL = Automatic
 </code></pre>
+=======
+<pre><code>CNAME record &gt; Name = email, Value = mailgun.org, TTL = Automatic</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p><strong>۲-</strong> دو رکورد MX با این مشخصات اضافه میکنیم</p>
 
 <pre><code>Name = domain.com (no www), value = mxa.mailgun.org, Priority = 10
+<<<<<<< HEAD
 Name = domain.com (no www), value = mxb.mailgun.org Priority = 10
 </code></pre>
+=======
+Name = domain.com (no www), value = mxb.mailgun.org Priority = 10</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>به جای domain.com باید نام دامنه خودتون رو جایگزین کنید.</p>
 
 <p><strong>۳-</strong> دو رکورد TXT هم اضافه میکنیم</p>
 
 <pre><code>Name= domain.com (no www), value = v=spf1…
+<<<<<<< HEAD
 Name = smtp._domainkey, value = k=rsa;…
 </code></pre>
+=======
+Name = smtp._domainkey, value = k=rsa;…</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>اینجا هم باید در خط اول اسم دامنه خودتون رو به جای domain.com بنویسید و آخر خط دوم هم بعد از rsa; به جای ... کلیدی که خود سایت بهتون داده رو اضافه کنید.</p>
 
@@ -381,10 +481,16 @@ Recipient       : custom_mail@kiavash.one
 Action          : Forward
                   google_account@gmail.com
 Priority        : 10
+<<<<<<< HEAD
 Description     : هر توضیحی که دوست دارید
 </code></pre>
 
 <p><img src="http://kiavash.one//images/2018-3-17-mailgun-002.png" alt="add route" id="addroute" /></p>
+=======
+Description     : هر توضیحی که دوست دارید</code></pre>
+
+<p><img id="addroute" src="/images/2018-3-17-mailgun-002.png" alt="add route" title="" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>قدم اول تموم شد، از این به بعد هر ایمیلی که به آدرس custoam_mail@kiavash.one فرستاده بشه رو من توی اینباکس google_account@gmail.com دریافت می‌کنیم.</p>
 
@@ -394,17 +500,29 @@ Description     : هر توضیحی که دوست دارید
 
 <p>بعد توی قسمت تنظیمات gmail وارد تب <a href="https://mail.google.com/mail/u/0/#settings/accounts">Accounts and Import</a> میشیم و توی قسمت Send mail as روی Add another email address you own کلیک میکنیم و آدرس ایمیلی که میخوایم برای فرستادن ایمیل ها ازش استفاده کنیم و توی مرحله قبل ساختیم رو وارد میکنیم.</p>
 
+<<<<<<< HEAD
 <p><img src="http://kiavash.one//images/2018-3-17-mailgun-003.png" alt="add gmail" id="addgmail" /></p>
 
 <p>و تنظیمات SMTP رو وارد میکنیم</p>
 
 <p><img src="http://kiavash.one//images/2018-3-17-mailgun-004.png" alt="set smtp" id="setsmtp" /></p>
+=======
+<p><img id="addgmail" src="/images/2018-3-17-mailgun-003.png" alt="add gmail" title="" /></p>
+
+<p>و تنظیمات SMTP رو وارد میکنیم</p>
+
+<p><img id="setsmtp" src="/images/2018-3-17-mailgun-004.png" alt="set smtp" title="" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <pre><code>Server: smtp.mailgun.org
 Port: 587
 Username: The full email address, e.g. “custom_mail@kiavash.one”
+<<<<<<< HEAD
 Password: YOUR PASSWORD set in mailgun
 </code></pre>
+=======
+Password: YOUR PASSWORD set in mailgun</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>روی Add Account کلیک کنید، تمام شد. از سرویس رایگان ایمیل دامنه شخصی تا سقف ۱۰،۰۰۰ ایمیل در ماه لذت ببرید.</p>
 ]]></content>
@@ -450,7 +568,11 @@ Password: YOUR PASSWORD set in mailgun
 
 <p>۲ - وارد کردن نام سایت و کلیک بر روی begin scan</p>
 
+<<<<<<< HEAD
 <p><img src="http://kiavash.one//images/2018-03-13-cloudflare1.png" alt="add site" id="addsite" /></p>
+=======
+<p><img id="addsite" src="/images/2018-03-13-cloudflare1.png" alt="add site" title="" /></p>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>صبر کنید تا اسکن تمام شود، تمام dnsهای فعال روی سایت نمایش داده می‌شوند و dnsهای جدیدی به شما برای جایگزین کردن پیشنهاد می‌شود. به پنجره‌ مدیریت دامین خود بروید و dnsهای cloudflare را با dns های خودتان جایگزین کنید. باید بین چند دقیقه تا چند ساعت، صبر کنید تا dnsهای جدید بر روی دامین شما فعال شود. بعد از فعال شدنشنان، میتوانیم از این به بعد dnsهای خودمان را با استفاده از cloudflare مدیریت کنیم.</p>
 
@@ -556,6 +678,7 @@ Password: YOUR PASSWORD set in mailgun
 
 <p>پس کار را با نصب میرا شروع می‌کنیم، میرا برای نصب به پرل نسخه 5.12 به بالا نیاز دارد، برای تست این که پرل را روی سیستم خود دارید یا نه، terminal یا command line را باز کنید و تایپ کنید: </p>
 
+<<<<<<< HEAD
 <pre><code>perl -v
 </code></pre>
 
@@ -563,10 +686,18 @@ Password: YOUR PASSWORD set in mailgun
 
 <pre><code>This is perl 5, version 26, subversion 0 (v5.26.0)
 </code></pre>
+=======
+<pre><code>perl -v</code></pre>
+
+<p>اگر پرل از قبل نصب شده باشد متنی شبیه به این را خواهید دید که ورژن پرل نصب شده را به شما نشان خواهد داد</p>
+
+<pre><code>This is perl 5, version 26, subversion 0 (v5.26.0)</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>اگر از سیستم عامل‌های شبه یونیکس استفاده میکنید احتمالا پرل روی دستگاه شما نصب شده است، اما اگر از ویندوز استفاده میکنید <a href="http://strawberryperl.com/">Strawberry Perl</a> یا «پرل توت فرنگی» را ابتدا نصب کنید 
 توت فرنگی cpan minus را به شکل توکار همراه خود دارد، برای نصب میرا تایپ کنید:</p>
 
+<<<<<<< HEAD
 <pre><code>cpanm Mira
 </code></pre>
 
@@ -579,10 +710,22 @@ Password: YOUR PASSWORD set in mailgun
 
 <pre><code>sudo cpanm Mira
 </code></pre>
+=======
+<pre><code>cpanm Mira</code></pre>
+
+<p>و برای سیستم‌های شبه یونیکس اگر capan minus را ندارید آن‌را نصب کنید</p>
+
+<pre><code>curl -L https://cpanmin.us | perl - --sudo App::cpanminus</code></pre>
+
+<p>و بعد برای نصب میرا</p>
+
+<pre><code>sudo cpanm Mira</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>یا بدون استفاده از cpanm و مستقیم از طریق perl shell میرا را نصب کیند:</p>
 
 <pre><code>$ sudo perl -MCPAN -e shell
+<<<<<<< HEAD
 &gt; install Mira
 </code></pre>
 
@@ -595,6 +738,17 @@ Password: YOUR PASSWORD set in mailgun
 
 <pre><code>mira new -t "hello word" -f blog
 </code></pre>
+=======
+&gt; install Mira</code></pre>
+
+<p>حالا برای محل نگهداری منابع، نوشته‌های خام و خروجی سایت یک دایرکتوری جدید می‌سازیم، داخل این دایرکتوری جدید می‌شویم و این دستور را تایپ میکنیم:</p>
+
+<pre><code>mira init</code></pre>
+
+<p>میرا در این مسیر جدید پیکربندی شده و تمام دایرکتوری‌ها و فایل‌های مورد نیاز خودش رو میسازه. قدم بعدی نوشتن یک پست جدید در وبلاگ هست</p>
+
+<pre><code>mira new -t "hello word" -f blog</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>بعد از تایپ این دستور میرا یک پیام نمایش میده که محل ذخیره شدن و اسم فایل رو نشون میده، فایل رو ویرایش میکنیم و هر متنی بخوایم توی بدنه ای فایل بعد از --- دوم مینویسیم، مثلا <a href="/2018/01/hello-world-from-mira/">اولین نوشته همین وبلاگ</a> چیزی شبیه به این هست:</p>
 
@@ -624,6 +778,7 @@ tag:
 
 <p>در آخر کار هم خروجی سایت رو میسازیم</p>
 
+<<<<<<< HEAD
 <pre><code>mira build
 </code></pre>
 
@@ -631,6 +786,13 @@ tag:
 
 <pre><code>mira view
 </code></pre>
+=======
+<pre><code>mira build</code></pre>
+
+<p>میرا تمام چیزی که برای انتشار نیاز داریم رو توی دایرکتوری public برامون ساخته و فقط کافیه که به محلی که میخوایم توی اینترنت منتشر بشه منتقلش کنیم. اگر دوست داشته باشیم پیش نمایشی از چیزی که تولید شده رو ببینیم هم میتونیم از این دستور استفاده کنیم:</p>
+
+<pre><code>mira view</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>یک سرور از محتوایی که تولید کردیم روی کامپیوتر شخصیمون استارت میشه که روی لوکال هاست و پورت ۵۰۰۰ قابل دیدن هست.</p>
 
@@ -640,15 +802,23 @@ tag:
 
 <p>تصمم داریم که از گیت هاب به عنوان بستر انتشار استفاده کنیم، پس اولین کاری که میکنیم یک مخزن در گیت‌هاب با الگویی شبیه به این میسازیم:</p>
 
+<<<<<<< HEAD
 <pre><code>username.github.io
 </code></pre>
+=======
+<pre><code>username.github.io</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>به جای username اسم یوزر خودمون راباید بنویسیم، حالا بر میگردیم به ترمینال و وارد دایرکتوری public میشیم، گیت رو توی این دایرکتوری پیکربندی میکنیم و محتوای تولید شده توی این دایرکتوری رو به مخزنی که توی گیت هاب ساختیم push میکنیم</p>
 
 <p>تمام، چند دقیقه صبر کنید و به این آدرس مراجعه کنید</p>
 
+<<<<<<< HEAD
 <pre><code>https://username.github.io/
 </code></pre>
+=======
+<pre><code>https://username.github.io/</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>برای دیدن جزییات بیشتر برای انتخاب محل انتشار می‌تونید این قسمت از مستندات میرا رو مطالعه کنید: <a href="https://miraxy.github.io/start-fa/#%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%20%D9%85%D8%AD%D9%84%20%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1">انتخاب محل انتشار</a></p>
 ]]></content>
@@ -708,8 +878,12 @@ sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
 
 <p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر</p>
 
+<<<<<<< HEAD
 <pre><code>/usr/share/cups/model
 </code></pre>
+=======
+<pre><code>/usr/share/cups/model</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>نگاه میکنیم، هم‌نام یا شبیه‌ترین نام به مدل دستگاه خود را پیدا کنید.</p>
 
@@ -723,11 +897,19 @@ sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
 <pre><code class="language-bash">sudo lpadmin -p LBP6000 -m CNCUPSLBP6018CAPTS.ppd -v ccp://localhost:59687
 sudo lpadmin -p LBP6000 -E
 sudo ccpdadmin -p LBP6000 -o /dev/usb/lp0
+<<<<<<< HEAD
 </code></pre>
 
 <p>و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم</p>
 
 <pre><code class="language-bash">sudo update-rc.d ccpd defaults
+=======
+```
+و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم
+
+``` bash
+sudo update-rc.d ccpd defaults
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 </code></pre>
 
 <p>گاهی اوقات ccpd هنگ میکند و queue تنها پیغام Processing since را نمایش می‌دهد و هیچ پرینتی صورت نمیگیرد، در این حالت برای پرینت گرفتن این دستورات را به ترتیب اجرا کنید یا یک فایل bash بسازید که تمام این دستورات را به ترتیب اجرا کند:</p>
@@ -742,20 +924,32 @@ pkill -9 -x captmoncnabc
 
 <p>برای به اشتراک گذاشتن پرینتر در شبکه با کامپیوترهایی که از ویندوز استفاده میکنند هم samba را نصب کیند و این تغییرات را در تنظیمات آن اعمال کنید:</p>
 
+<<<<<<< HEAD
 <pre><code>sudo gedit /etc/samba/smb.conf
 </code></pre>
+=======
+<pre><code>sudo gedit /etc/samba/smb.conf</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>در قسمت [printers] :</p>
 
 <pre><code>browseable = yes
+<<<<<<< HEAD
 guest ok = yes
 </code></pre>
+=======
+guest ok = yes</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>و samba را ری‌استارت کنید:</p>
 
 <pre><code>sudo service smbd restart
+<<<<<<< HEAD
 sudo service nmbd restart
 </code></pre>
+=======
+sudo service nmbd restart</code></pre>
+>>>>>>> c6ddb31c1d25d76a1aa745db201b21a3050ee875
 
 <p>در setting سیستم، قسمت printer منوی server را انتخاب کنید و Publish shared printers connected to this server را فعال کنید، بر روی پرینتر نصب شده کلیک راست کنید و Shared را چک بزنید.</p>
 ]]></content>
