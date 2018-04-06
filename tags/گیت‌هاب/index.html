@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="Farsi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>تجربه باز | بایگانی: گیت‌هاب</title>
+        <meta name="keywords" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="گیت‌هاب">
+        <meta property="og:url" content="http://kiavash.one">
+        <meta property="og:site_name" content="تجربه باز">
+        <meta property="og:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open experience">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="گیت‌هاب">
+        <meta name="twitter:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open ex...">
+        <link rel="alternative" href="/atom.xml" title="تجربه باز" type="application/atom+xml">
+        <link rel="short icon" href="/static/img/logo.png">
+        <link rel="stylesheet" href="/static/css/opex.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/monokai-sublime.css" type="text/css">
+        <link href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha17/dist/font-face.css" rel="stylesheet" type="text/css" />
+    </head>
+
+<body>
+  <header>
+    <div id="header-inner">
+      <div id="header-content">
+        <h1>تجربه باز</h1>
+        <h2>در ستایش تجربه کردن و یادگرفتن همیشگی / open experience</h2>
+        <ul>
+          <li class="nav"><strong><a href="/">صفحه اول</a></strong></li>
+          <li class="nav"><a href="#">درباره</a></li>
+          <li class="nav"><a href="#">تماس</a></li>
+          <!--<li class="nav"><a href="atom.xml">خوراک</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div id="content-inner">
+      <div id="alpha">
+        <div id="alpha-inner">
+          
+          <article id="cloudflare" itemscope itemprop="blogPost">
+            <h1 class="entry-title" itemprop="name">
+            <a href="/2018/13/cloudflare/" itemprop="url">اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</a>
+            </h1>
+            
+            <div class="entry-date"><time datetime="2018-03-13 21:54:13" itemprop="datePublished">سه‌شنبه‌، ۲۲&nbsp;اسفند&nbsp;۱۳۹۶</time></div>
+        	  
+            <section class="entry-body">
+            <a name="more"></a>
+<p>من برای مدیریت dns سایت از cloudflare استفاده می‌کنم و از اونجایی که این سایت رو به صورت استاتیک می‌سازم و از قابلیت صفحه‌های گیت‌هاب برای میزبانی استفاده می‌کنم دلایل زیادی برای این انتخاب دارم، مثلا فعال کردن https برای دامین یا استفاده از cdnهای cloudflar یا محافظت در مقابل حمله‌هایی که ممکنه به سایت بشه، لود شدن سریع‌تر سایت و... و تمام این امکانات رو هم با استفاده از نسخه‌ی رایگان این سرویس می‌گیرم، البته اگر از سرور خودتون استفاده کنید این امکانات رو میتونید خودتون روی سرور فعال کنید، اما اگر دانش یا وقت کافی برای مدیریت سرور نداشته باشیم باز هم استفاده از سرویس‌هایی مثل cloudflare راه مطمین‌تری هست که میدونیم تقریبا به صورت تمام وقت فعال هستن و توسط افراد با تجربه‌ای هم مدیریت و اداره میشن.</p>
+
+<p>اما این مواردی که گفتم چه اهمیتی دارن؟ مثلا چرا باید مهم باشه که از https استفاده کنیم؟ بزارید به صورت ساده و خلاصه یه نگاه به تفاوت http و https بندازیم. وقتی از http استفاده می‌کنیم هر کسی که بین ما و سایت مورد نظر باشه میتونه محتوای ارسال و دریافت شده رو، شامل متن سایت، رمزهایی که وارد می‌کنیم، عکس‌هاو هرچیز دیگه‌ای رو میتونه ببینه و حتی تغییر بده. اما وقتی از https استفاده میکنیم داده‌های رد و بدل شده رمز نگاری میشه و برای افراد و کامپیوترهایی که بین ما و سایت موردنظرمون هستن غیرقابل فهم.</p>
+
+<p>خوب چه کار کنیم که cloudflare رو به عنوان واسط بین دامین و گیت‌هاب فعال کنیم؟ </p>
+
+<p>۱ - اول مراجعه به <a href="https://www.cloudflare.com/">cloudflare</a> و ساختن یک اکانت.</p>
+
+<p>۲ - وارد کردن نام سایت و کلیک بر روی begin scan</p>
+
+<p><img src="/images/2018-03-13-cloudflare1.png" alt="add site" id="addsite" /></p>
+
+<p>صبر کنید تا اسکن تمام شود، تمام dnsهای فعال روی سایت نمایش داده می‌شوند و dnsهای جدیدی به شما برای جایگزین کردن پیشنهاد می‌شود. به پنجره‌ مدیریت دامین خود بروید و dnsهای cloudflare را با dns های خودتان جایگزین کنید. باید بین چند دقیقه تا چند ساعت، صبر کنید تا dnsهای جدید بر روی دامین شما فعال شود. بعد از فعال شدنشنان، میتوانیم از این به بعد dnsهای خودمان را با استفاده از cloudflare مدیریت کنیم.</p>
+
+<p>برای مثال من ۲ رکورد A ساخته‌ام که به IPهای گیت هاب اشاره میکنند و یک cname برای یکی کردن آدرس سایت با و بدون www</p>
+
+<table>
+<col align="center" />
+<col align="left" />
+<col align="left" />
+<thead>
+<tr>
+	<th>type</th>
+	<th>name</th>
+	<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td align="center">a</td>
+	<td align="left">site.com</td>
+	<td align="left">192.30.252.153</td>
+</tr>
+<tr>
+	<td align="center">a</td>
+	<td align="left">site.com</td>
+	<td align="left">192.30.252.154</td>
+</tr>
+<tr>
+	<td align="center">CNAME</td>
+	<td align="left">www</td>
+	<td align="left">site.com</td>
+</tr>
+</tbody>
+</table>
+
+<p>تمام شد، به همین سادگی. البته خیلی چیزهای بیشتری برای تنظیم کردن در پنل مدیریت هست که منتظر شما هستند.</p>
+
+            </section>
+
+            <section class="meta">
+            <span>              دسته بندی:                <a href="/categories/اینترنت/">اینترنت</a>              برچسب‌ها:                <a href="/tags/cloudflare/">cloudflare</a>،&nbsp;                <a href="/tags/https/">https</a>،&nbsp;                <a href="/tags/گیت‌هاب/">گیت‌هاب</a>،&nbsp;                <a href="/tags/github/">github</a>            </span>
+            </section>
+          </article>
+          
+<!-- Paging -->
+          <section id="pager">
+            <nav class="container">
+            
+
+			      
+            </nav>
+          </section>
+<!-- /Paging -->
+				</div>
+			</div>
+			<div id="beta">
+        <div id="beta-inner">
+          <aside class="side-box">
+            اگر دوست داشته باشید می‌تونید من رو جاهای دیگه هم پیدا کنید
+            <ul>
+              <li><a href="#">گیت‌هاب</a></li>
+              <li><a href="#">توییتر‍</a></li>
+            </ul>
+          </aside>
+          <aside class="side-box">
+            <h2>پیگیری</h2>
+            اگر مایل باشید میتوانید مطالب را از طریق خوراک سایت در خبرخوان‌ها پیگیری کنید
+            <a href="http://feeds.feedburner.com/kiavash/feed" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">
+            <img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a>
+            <a href="http://feeds.feedburner.com/kiavash/feed" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">مشترک فید تجربه باز شوید</a>
+          </aside>          <aside class="side-box">
+            <h2>دسته‌بندی‌ها</h2>
+            <ul>              <li><a href="/categories/میرا/">میرا</a></li>
+                            <li><a href="/categories/اینترنت/">اینترنت</a></li>
+                            <li><a href="/categories/سخت-افزار/">سخت افزار</a></li>
+                            <li><a href="/categories/ابزار/">ابزار</a></li>
+                            <li><a href="/categories/آموزش/">آموزش</a></li>
+                          </ul>
+          </aside>          <aside class="side-box">
+            <h2>برچسب‌ها</h2>
+            <ul class="tags">              <li class="side-links"><a href="/tags/میرا/">میرا</a></li>
+                                          <li class="side-links"><a href="/tags/گیت‌هاب/">گیت‌هاب</a></li>
+                                          <li class="side-links"><a href="/tags/پرینتر/">پرینتر</a></li>
+                                          <li class="side-links"><a href="/tags/مارک-داون/">مارک داون</a></li>
+                                          <li class="side-links"><a href="/tags/لینوکس/">لینوکس</a></li>
+                                          <li class="side-links"><a href="/tags/سلام-دنیا/">سلام دنیا</a></li>
+                                          <li class="side-links"><a href="/tags/سایت-ساز-استاتیک/">سایت ساز استاتیک</a></li>
+                                          <li class="side-links"><a href="/tags/دامین-شخصی/">دامین شخصی</a></li>
+                                          <li class="side-links"><a href="/tags/ایمیل/">ایمیل</a></li>
+                                          <li class="side-links"><a href="/tags/اوبونتو/">اوبونتو</a></li>
+                                          <li class="side-links"><a href="/tags/انتشار-استاتیک/">انتشار استاتیک</a></li>
+                                          <li class="side-links"><a href="/tags/ابزار/">ابزار</a></li>
+                                          <li class="side-links"><a href="/tags/آموزش/">آموزش</a></li>
+                                          <li class="side-links"><a href="/tags/samba/">samba</a></li>
+                                          <li class="side-links"><a href="/tags/mrakdown/">mrakdown</a></li>
+                                          <li class="side-links"><a href="/tags/mailgun/">mailgun</a></li>
+                                          <li class="side-links"><a href="/tags/lbp6000/">lbp6000</a></li>
+                                          <li class="side-links"><a href="/tags/https/">https</a></li>
+                                          <li class="side-links"><a href="/tags/gmail/">gmail</a></li>
+                                          <li class="side-links"><a href="/tags/github/">github</a></li>
+                                          <li class="side-links"><a href="/tags/custom-domain/">custom domain</a></li>
+                                          <li class="side-links"><a href="/tags/cups/">cups</a></li>
+                                          <li class="side-links"><a href="/tags/cloudflare/">cloudflare</a></li>
+                                          <li class="side-links"><a href="/tags/cannon/">cannon</a></li>
+                                        </ul>          </aside>
+
+          <div class="side-box">
+            <h2>لینک‌ها</h2>
+            <ul>
+              
+              <a href="http://thecoach.ir/"><li class="side-links">
+                امیر مهرانی
+              </li></a>
+              
+              <a href="https://blog.dutymess.ir/"><li class="side-links">
+                طه
+              </li></a>
+              
+              <a href="https://sallar.me/farsi/"><li class="side-links">
+                سالار کابلی
+              </li></a>
+              
+              <a href="https://mehdix.ir/"><li class="side-links">
+                مهدی صادقی
+              </li></a>
+              
+              <a href="http://thecoci.me/farsi/"><li class="side-links">
+                سروش صفری
+              </li></a>
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+		</div>
+	</section>
+  <!-- Footer -->
+  <footer>
+    <div id="footer-inner">
+      <section class="copyright">
+        <p class="container">
+          مطالب تحت لیسانس <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license" target="_blank">کریتیو کامنز</a> منتشر می‌شوند.
+        </p>
+        <p>قدرت گرفته توسط <a href="https://miraxy.github.io/fa/">میرا</a></p>
+      </section>
+    </div>
+  </footer>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script src="/static/js/highlight.pack.js"></script>
+  <script src="/static/js/highlightjs-line-numbers.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+  </script>
+<!-- /Scripts -->
+</body>
+</html>

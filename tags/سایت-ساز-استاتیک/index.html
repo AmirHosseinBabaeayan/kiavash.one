@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="Farsi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>تجربه باز | بایگانی: سایت ساز استاتیک</title>
+        <meta name="keywords" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="سایت ساز استاتیک">
+        <meta property="og:url" content="http://kiavash.one">
+        <meta property="og:site_name" content="تجربه باز">
+        <meta property="og:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open experience">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="سایت ساز استاتیک">
+        <meta name="twitter:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open ex...">
+        <link rel="alternative" href="/atom.xml" title="تجربه باز" type="application/atom+xml">
+        <link rel="short icon" href="/static/img/logo.png">
+        <link rel="stylesheet" href="/static/css/opex.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/monokai-sublime.css" type="text/css">
+        <link href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha17/dist/font-face.css" rel="stylesheet" type="text/css" />
+    </head>
+
+<body>
+  <header>
+    <div id="header-inner">
+      <div id="header-content">
+        <h1>تجربه باز</h1>
+        <h2>در ستایش تجربه کردن و یادگرفتن همیشگی / open experience</h2>
+        <ul>
+          <li class="nav"><strong><a href="/">صفحه اول</a></strong></li>
+          <li class="nav"><a href="#">درباره</a></li>
+          <li class="nav"><a href="#">تماس</a></li>
+          <!--<li class="nav"><a href="atom.xml">خوراک</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div id="content-inner">
+      <div id="alpha">
+        <div id="alpha-inner">
+          
+          <article id="weblog-with-mira-and-github" itemscope itemprop="blogPost">
+            <h1 class="entry-title" itemprop="name">
+            <a href="/2018/11/weblog-with-mira-and-github/" itemprop="url">راه اندازی یک وبلاگ استاتیک با کمک میرا و گیت‌هاب</a>
+            </h1>
+            
+            <div class="entry-date"><time datetime="2018-03-11 18:17:56" itemprop="datePublished">یک‌شنبه، ۲۰&nbsp;اسفند&nbsp;۱۳۹۶</time></div>
+        	  
+            <section class="entry-body">
+            <a name="more"></a>
+<p>شاید پیش اومده که بخواید مطلبی رو توی اینترنت منتشر کنید، حالا چه به عنوان وبلاگ، صفحات معرفی و راهنمای پروژه، صفحات معرفی شخصی و رزومه، یک کتاب آنلاین یا هر چیز دیگه‌ای. اگر همچین تجربه‌ای رو داشتید احتمالا با موضوعاتی مثل خرید هاست، انتقال فایل‌ها، بک‌آپ گرفتن، خرید دامنه، پایگاه داده یا همون دیتابیس ها و خیلی اسامی دیگه شبیه به این‌ها مواجه شده باشید، این پست قصد داره که یه راه حل برای خلاصی از تمام این موضوعات رو ارائه کنه و اگر هم که تا امروز درگیر این مسایل نشدید که قصد داره جلوی مواجهه و درگیریتون رو با خیلی از مسایل فنی انتشار سایت روی اینترنت رو بگیره. و البته با حذف این موارد و نگهداری فایل‌هامون روی کامپیوتر شخصی و گیت‌هاب، مسائل مالی رو هم حذف کنیم و تقریبا به صفر برسونیمش یا حداکثر هزینه‌ی ثبت یک دامنه به عنوان تنها هزینه‌ برامون مطرح باشه.</p>
+
+<p>بدون شک راه اندازی یک سرویس مثل ایمیل یا فروشگاه آنلاین یا یک شبکه اجتماعی و امثال این‌ها رو نمیشه با استفاده از یک راه حل استاتیک و نگهداری فایل‌ها روی کامپیوتر شخصی و با حذف کردن دیتابیس و با کمک سرویس‌های میزبانی آزاد مثل گیت‌هاب و... راه‌اندازی کرد.</p>
+
+<p>پس از این راه حل برای کجا استفاده میشه کرد؟ همونطور که توی شروع کار گفتم، برای یک وبلاگ، صفحات معرفی یا راهنمای پروژه‌ها، ساختن یک رزومه، صفحات معرفی شخصی و درباره‌ی من، یک کتاب آنلاین و امثال اینها.</p>
+
+<h3>چرا استاتیک؟</h3>
+
+<ol>
+<li><strong>سرعت</strong>. صفحات استاتیک سریع هستند، یک بار برای تولید شدنشان وقت گذاشته می‌شود و بعد از آن برای هر بار لود شدن، نیازی به ارتباط با دیتابیس برای دریافت محتوا و سپس تولید و آماده‌سازی آن برای انتشار ندارند.</li>
+<li><strong>ارزان بودن</strong>. صفحات ایستا برای انتشار نیاز به یک سرور اختصاصی ندارند، به راحتی و در هر جایی می‌توان از آن‌ها میزبانی کرد. همچنین اگر از سرور اختصاصی استفاده کنید، به پردازش‌گر یا حافظه‌ی قوی نیاز ندارند.</li>
+<li><strong>امنیت</strong>. سیستم‌های مدیریت محتوای دینامیک که به وسیله‌ی یک فضای میزبانی نگهداری و اجرا می‌شوند، همه سابقه‌ی نفوذپذیری دارند، اما هنگام استفاده از صفحات ایستا، نگرانی ازاین بابت نخاهید داشت، تنها کافی است سرور شما امن باشد.</li>
+<li><strong>قابل انتقال</strong>. انتقال صفحات ایستا به راحتی انتقال فایل‌های موسیقی است، فقط آن‌ها را کپی کنید و هرجا که نیاز بود منتقل کنید. نه نیازی به نصب شدن دارند و نه به پیش‌نیاز خاصی محتاج هستند.</li>
+</ol>
+
+<h3>یک توضیح کوچک</h3>
+
+<p>مثلما این نوشته قصد نداره موضوع رو به راحتی حل کنه یا چیزی شبیه به خیلی از پست‌های مرسوم باشه که مدعی حل یک مشکل تنها با دوکلیک هستن، بلکه به شکل صحیح‌تر باید بگیم قصدمون جایگزین کردن یه سری مسائل و مشکلات سنتی با یه سری مسائل و مشکلات مدرن‌تر و مطقی‌تر و کم‌تر هست. پس برای شروع باید تا حدی به این مسایل آشنا باشیم:</p>
+
+<ul>
+<li>نصب نرم افزار روی کامپیوتر شخصی</li>
+<li>استفاده ساده و ابتدایی از گیت</li>
+<li>ثبت نام در گیت هاب و داشتن یک اکانت</li>
+</ul>
+
+<h3>شروع</h3>
+
+<h4>قدم اول، مدیریت محتوا</h4>
+
+<p>صفحات ایستا رو میشه به راحتی با استفاده از html و css ساخت و آپلود کرد، اما اگر بخوایم کنترل بییشتری برای مدیریت محتوایی که تولید میکنیم، قالب بندی پوسته‌ها، آرشیو کردن و دسته بندی اتوماتیک موضوعات، صفحه بندی نوشته‌های قدیمی‌تر و مسائلی مثل این‌ها داشته باشیم، باید از یک سایت ساز استاتیک استفاده کنیم، که البته از تیتر این نوشته مشخصه که تصمیم داریم از <a href="https://miraxy.githu.io/fa">میرا</a> استفاده کنیم، اما چرا؟ برای من چند دلیل وجود دارد:</p>
+
+<ul>
+<li>میرا را خودم نوشته‌ام :) دلیل منطقی نیست اما به هر حال یک دلیل است دیگر</li>
+<li>بیشتر از یک پروژه یا سایت را میشود با میرا در یک مخزن مدیریت کرد و نیازی نیست برای هر سایت جدید یک مخزن جدید ایجاد کنیم</li>
+<li>انعطاف پذیری بالایی دارد و برای هرکاری میتونه مورد استفاده قرار بگیره</li>
+<li>...</li>
+</ul>
+
+<p>پس کار را با نصب میرا شروع می‌کنیم، میرا برای نصب به پرل نسخه 5.12 به بالا نیاز دارد، برای تست این که پرل را روی سیستم خود دارید یا نه، terminal یا command line را باز کنید و تایپ کنید: </p>
+
+<pre><code>perl -v
+</code></pre>
+
+<p>اگر پرل از قبل نصب شده باشد متنی شبیه به این را خواهید دید که ورژن پرل نصب شده را به شما نشان خواهد داد</p>
+
+<pre><code>This is perl 5, version 26, subversion 0 (v5.26.0)
+</code></pre>
+
+<p>اگر از سیستم عامل‌های شبه یونیکس استفاده میکنید احتمالا پرل روی دستگاه شما نصب شده است، اما اگر از ویندوز استفاده میکنید <a href="http://strawberryperl.com/">Strawberry Perl</a> یا «پرل توت فرنگی» را ابتدا نصب کنید 
+توت فرنگی cpan minus را به شکل توکار همراه خود دارد، برای نصب میرا تایپ کنید:</p>
+
+<pre><code>cpanm Mira
+</code></pre>
+
+<p>و برای سیستم‌های شبه یونیکس اگر capan minus را ندارید آن‌را نصب کنید</p>
+
+<pre><code>curl -L https://cpanmin.us | perl - --sudo App::cpanminus
+</code></pre>
+
+<p>و بعد برای نصب میرا</p>
+
+<pre><code>sudo cpanm Mira
+</code></pre>
+
+<p>یا بدون استفاده از cpanm و مستقیم از طریق perl shell میرا را نصب کیند:</p>
+
+<pre><code>$ sudo perl -MCPAN -e shell
+&gt; install Mira
+</code></pre>
+
+<p>حالا برای محل نگهداری منابع، نوشته‌های خام و خروجی سایت یک دایرکتوری جدید می‌سازیم، داخل این دایرکتوری جدید می‌شویم و این دستور را تایپ میکنیم:</p>
+
+<pre><code>mira init
+</code></pre>
+
+<p>میرا در این مسیر جدید پیکربندی شده و تمام دایرکتوری‌ها و فایل‌های مورد نیاز خودش رو میسازه. قدم بعدی نوشتن یک پست جدید در وبلاگ هست</p>
+
+<pre><code>mira new -t "hello word" -f blog
+</code></pre>
+
+<p>بعد از تایپ این دستور میرا یک پیام نمایش میده که محل ذخیره شدن و اسم فایل رو نشون میده، فایل رو ویرایش میکنیم و هر متنی بخوایم توی بدنه ای فایل بعد از --- دوم مینویسیم، مثلا <a href="/2018/01/hello-world-from-mira/">اولین نوشته همین وبلاگ</a> چیزی شبیه به این هست:</p>
+
+<pre><code>---
+utid: 20180301002154
+date: 2018-03-01 00:21:54
+title: سلام دنیا از دریچه‌ی میرا
+_index: hello world from mira
+categories:
+  - میرا
+tag:
+  - میرا
+  - سلام دنیا
+---
+من اهل تجربه کردن هر چیز جدیدی هستم، حتی شاید بشه گفت که به شکلی معتاد تست کردن باشم، البته اکثرا بعد از مدتی به خاطر تکرار نشدن از یادم میرن و از اونجایی که هیچ وقت هم دیگه نیازی بهشون پیدا نمیکنم چندان برام مهم نیست، اما خیلی وقت‌ها هم بوده که چیزهایی که بارها بهشون نیاز پیدا کردم یا کس دیگه‌ای براش سوال شده بوده رو فراموش کرده بودم. سالها بود که تصمیم داشتم مواردی که رو به نظرم کاربردی‌تر میان رو به شکل یک وبلاگ بنویسم تا هم آرشیوی برای خودم باشه و همینکه شاید به کار یکی دیگه بیاد.
+
+نهایتا تصمیم گرفتم که یک وبلاگ رو به شکل استاتیک برای این کار بسازم، مدتی رو میگشتم و دنبال گزینه برای ساختن وبلاگ استاتیک بودم، هر کدوم از سایت‌سازهای استاتیک نکات مثبت و منفی خودشون رو داشتن، تصمیم گیری برام سخت شده بود و خوب چون من اهل اختراع کردن دوباره‌ی چرخ هستم، تصمیم گرفتم که تمام نکاتی رو که از نظر خودم مثبت بودن و حس میکردم مورد نیازم هستن رو کنار هم جمع کنم و مشکل خودم رو یک بار برای همیشه حل کنم، این شد که نوشتن [میرا](miraxy.githu.io/fa/) رو شروع کردم.
+
+مطمینا میرا هنوز کار زیادی برای انجام دادن داره و تبدیل به اون ایده‌آلی که توی ذهنم بود نشده، اما به مرحله‌ای هم رسیده که کارش رو بتونه انجام بده. بزرگترین ضعف میرا اینه که هنوز از نظر مستند سازی و نوشتن راهنمای کاربردی خیلی کمبود داره و مستنداتش هنوز گنگ و نامفهموم هستن که امیدوار به کمک دوستان هستم برای سر و سامان دادن بهش و نوشتن یک راهنمای کاربری ساده برای استفاده عمومی و البته یکی از کمبودهای دیگه میرا هم نبودن قالب‌ها و استراکچرهای آماده براش هست که برای این قسمت هم چشم امیدم به کمک دوستان و جامعه کاربری هست.
+
+میرا به شکل یک نرم افزار آزاد و با لایسنس GPL-3.0 توسعه پیدا میکنه و به کدهاش میتونید در مخازن [گیت‌هاب](https://github.com/kiamazi/mira) پروژه دسترسی داشته باشید.
+
+### سلام دنیا.
+
+این اولین نوشته این وبلاگ است که با کمک [میرا](miraxy.githu.io/fa/) ساخته شده.
+</code></pre>
+
+<p>در آخر کار هم خروجی سایت رو میسازیم</p>
+
+<pre><code>mira build
+</code></pre>
+
+<p>میرا تمام چیزی که برای انتشار نیاز داریم رو توی دایرکتوری public برامون ساخته و فقط کافیه که به محلی که میخوایم توی اینترنت منتشر بشه منتقلش کنیم. اگر دوست داشته باشیم پیش نمایشی از چیزی که تولید شده رو ببینیم هم میتونیم از این دستور استفاده کنیم:</p>
+
+<pre><code>mira view
+</code></pre>
+
+<p>یک سرور از محتوایی که تولید کردیم روی کامپیوتر شخصیمون استارت میشه که روی لوکال هاست و پورت ۵۰۰۰ قابل دیدن هست.</p>
+
+<p>برای خواندن بیشتر در مورد میرا و کارکردش میتونید به <strong><a href="https://miraxy.github.io/doc-fa/">صفحات مستندات میرا</a></strong> مراجعه کنید</p>
+
+<h4>قدم دوم، انتشار محتوا</h4>
+
+<p>تصمم داریم که از گیت هاب به عنوان بستر انتشار استفاده کنیم، پس اولین کاری که میکنیم یک مخزن در گیت‌هاب با الگویی شبیه به این میسازیم:</p>
+
+<pre><code>username.github.io
+</code></pre>
+
+<p>به جای username اسم یوزر خودمون راباید بنویسیم، حالا بر میگردیم به ترمینال و وارد دایرکتوری public میشیم، گیت رو توی این دایرکتوری پیکربندی میکنیم و محتوای تولید شده توی این دایرکتوری رو به مخزنی که توی گیت هاب ساختیم push میکنیم</p>
+
+<p>تمام، چند دقیقه صبر کنید و به این آدرس مراجعه کنید</p>
+
+<pre><code>https://username.github.io/
+</code></pre>
+
+<p>برای دیدن جزییات بیشتر برای انتخاب محل انتشار می‌تونید این قسمت از مستندات میرا رو مطالعه کنید: <a href="https://miraxy.github.io/start-fa/#%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%20%D9%85%D8%AD%D9%84%20%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1">انتخاب محل انتشار</a></p>
+
+            </section>
+
+            <section class="meta">
+            <span>              دسته بندی:                <a href="/categories/میرا/">میرا</a>              برچسب‌ها:                <a href="/tags/میرا/">میرا</a>،&nbsp;                <a href="/tags/انتشار-استاتیک/">انتشار استاتیک</a>،&nbsp;                <a href="/tags/سایت-ساز-استاتیک/">سایت ساز استاتیک</a>            </span>
+            </section>
+          </article>
+          
+<!-- Paging -->
+          <section id="pager">
+            <nav class="container">
+            
+
+			      
+            </nav>
+          </section>
+<!-- /Paging -->
+				</div>
+			</div>
+			<div id="beta">
+        <div id="beta-inner">
+          <aside class="side-box">
+            اگر دوست داشته باشید می‌تونید من رو جاهای دیگه هم پیدا کنید
+            <ul>
+              <li><a href="#">گیت‌هاب</a></li>
+              <li><a href="#">توییتر‍</a></li>
+            </ul>
+          </aside>
+          <aside class="side-box">
+            <h2>پیگیری</h2>
+            اگر مایل باشید میتوانید مطالب را از طریق خوراک سایت در خبرخوان‌ها پیگیری کنید
+            <a href="http://feeds.feedburner.com/kiavash/feed" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">
+            <img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a>
+            <a href="http://feeds.feedburner.com/kiavash/feed" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">مشترک فید تجربه باز شوید</a>
+          </aside>          <aside class="side-box">
+            <h2>دسته‌بندی‌ها</h2>
+            <ul>              <li><a href="/categories/میرا/">میرا</a></li>
+                            <li><a href="/categories/اینترنت/">اینترنت</a></li>
+                            <li><a href="/categories/سخت-افزار/">سخت افزار</a></li>
+                            <li><a href="/categories/ابزار/">ابزار</a></li>
+                            <li><a href="/categories/آموزش/">آموزش</a></li>
+                          </ul>
+          </aside>          <aside class="side-box">
+            <h2>برچسب‌ها</h2>
+            <ul class="tags">              <li class="side-links"><a href="/tags/میرا/">میرا</a></li>
+                                          <li class="side-links"><a href="/tags/گیت‌هاب/">گیت‌هاب</a></li>
+                                          <li class="side-links"><a href="/tags/پرینتر/">پرینتر</a></li>
+                                          <li class="side-links"><a href="/tags/مارک-داون/">مارک داون</a></li>
+                                          <li class="side-links"><a href="/tags/لینوکس/">لینوکس</a></li>
+                                          <li class="side-links"><a href="/tags/سلام-دنیا/">سلام دنیا</a></li>
+                                          <li class="side-links"><a href="/tags/سایت-ساز-استاتیک/">سایت ساز استاتیک</a></li>
+                                          <li class="side-links"><a href="/tags/دامین-شخصی/">دامین شخصی</a></li>
+                                          <li class="side-links"><a href="/tags/ایمیل/">ایمیل</a></li>
+                                          <li class="side-links"><a href="/tags/اوبونتو/">اوبونتو</a></li>
+                                          <li class="side-links"><a href="/tags/انتشار-استاتیک/">انتشار استاتیک</a></li>
+                                          <li class="side-links"><a href="/tags/ابزار/">ابزار</a></li>
+                                          <li class="side-links"><a href="/tags/آموزش/">آموزش</a></li>
+                                          <li class="side-links"><a href="/tags/samba/">samba</a></li>
+                                          <li class="side-links"><a href="/tags/mrakdown/">mrakdown</a></li>
+                                          <li class="side-links"><a href="/tags/mailgun/">mailgun</a></li>
+                                          <li class="side-links"><a href="/tags/lbp6000/">lbp6000</a></li>
+                                          <li class="side-links"><a href="/tags/https/">https</a></li>
+                                          <li class="side-links"><a href="/tags/gmail/">gmail</a></li>
+                                          <li class="side-links"><a href="/tags/github/">github</a></li>
+                                          <li class="side-links"><a href="/tags/custom-domain/">custom domain</a></li>
+                                          <li class="side-links"><a href="/tags/cups/">cups</a></li>
+                                          <li class="side-links"><a href="/tags/cloudflare/">cloudflare</a></li>
+                                          <li class="side-links"><a href="/tags/cannon/">cannon</a></li>
+                                        </ul>          </aside>
+
+          <div class="side-box">
+            <h2>لینک‌ها</h2>
+            <ul>
+              
+              <a href="http://thecoach.ir/"><li class="side-links">
+                امیر مهرانی
+              </li></a>
+              
+              <a href="https://blog.dutymess.ir/"><li class="side-links">
+                طه
+              </li></a>
+              
+              <a href="https://sallar.me/farsi/"><li class="side-links">
+                سالار کابلی
+              </li></a>
+              
+              <a href="https://mehdix.ir/"><li class="side-links">
+                مهدی صادقی
+              </li></a>
+              
+              <a href="http://thecoci.me/farsi/"><li class="side-links">
+                سروش صفری
+              </li></a>
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+		</div>
+	</section>
+  <!-- Footer -->
+  <footer>
+    <div id="footer-inner">
+      <section class="copyright">
+        <p class="container">
+          مطالب تحت لیسانس <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license" target="_blank">کریتیو کامنز</a> منتشر می‌شوند.
+        </p>
+        <p>قدرت گرفته توسط <a href="https://miraxy.github.io/fa/">میرا</a></p>
+      </section>
+    </div>
+  </footer>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script src="/static/js/highlight.pack.js"></script>
+  <script src="/static/js/highlightjs-line-numbers.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+  </script>
+<!-- /Scripts -->
+</body>
+</html>
