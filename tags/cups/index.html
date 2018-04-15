@@ -1,262 +1,96 @@
 <!DOCTYPE html>
 <html lang="Farsi">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>تجربه باز | بایگانی: cups</title>
-        <meta name="keywords" content="">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="cups">
-        <meta property="og:url" content="http://kiavash.one">
-        <meta property="og:site_name" content="تجربه باز">
-        <meta property="og:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open experience">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="cups">
-        <meta name="twitter:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open ex...">
-        <link rel="alternative" href="/atom.xml" title="تجربه باز" type="application/atom+xml">
-        <link rel="short icon" href="/static/img/logo.png">
-        <link rel="stylesheet" href="/static/css/opex.css" type="text/css">
-        <link rel="stylesheet" href="/static/css/monokai-sublime.css" type="text/css">
-        <link href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha17/dist/font-face.css" rel="stylesheet" type="text/css" />
-    </head>
+<head>
+  <title>تجربه باز | بایگانی: cups</title>
 
+  <meta charset="utf-8">
+  <meta name="description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open experience">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="تجربه باز">
+  <meta property="og:url" content="http://kiavash.one">
+  <meta property="og:site_name" content="تجربه باز">
+  <meta property="og:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open experience">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="تجربه باز">
+  <meta name="twitter:description" content="در ستایش تجربه کردن و یادگرفتن همیشگی / open ex...">
+
+  <link rel="alternative" href="/atom.xml" title="تجربه باز" type="application/atom+xml">
+  <link rel="short icon" href="/static/img/logo.png">
+  <link rel="stylesheet" href="/static/theme/miramal/css/style.css" type="text/css">
+
+</head>
 <body>
-  <header>
-    <div id="header-inner">
-      <div id="header-content">
-        <h1>تجربه باز</h1>
-        <h2>در ستایش تجربه کردن و یادگرفتن همیشگی / open experience</h2>
-        <ul>
-          <li class="nav"><strong><a href="/">صفحه اول</a></strong></li>
-          <li class="nav"><a href="#">درباره</a></li>
-          <li class="nav"><a href="#">تماس</a></li>
-          <!--<li class="nav"><a href="atom.xml">خوراک</a></li>-->
-        </ul>
-      </div>
+
+<!-- Header -->
+<header>
+  <section class="container">
+    <nav>
+      
+      <h1 class="name-title"><a href="/">تجربه باز</a></h1>
+      
+      <ul>
+        
+          <li><a href="/">فهرست</a></li>
+          <li><a href="//about/">درباره</a></li>
+          <li><a href="http://github.com/kiamazi" target="_blank">گیت‌هاب</a></li>
+          <li><a href="http://twitter.com/kiavash" target="_blank">توییتر</a></li>
+        
+      </ul>
+    </nav>
+    <div class="logo">
+      
+      <h1>
+        cups
+      </h1>
+      
     </div>
-  </header>
+  </section>
+</header>
+<!-- /Header -->
 
-  <section id="content">
-    <div id="content-inner">
-      <div id="alpha">
-        <div id="alpha-inner">
-          
-          <article id="cannaon-lbp6000" itemscope itemprop="blogPost">
-            <h1 class="entry-title" itemprop="name">
-            <a href="/2018/03/03/cannaon-lbp6000/" itemprop="url">نصب پرینتر cannaon lbp6000 برای دبیان/اوبونتو</a>
-            </h1>
-            
-            <div class="entry-date"><time datetime="2018-03-03 20:31:56" itemprop="datePublished">شنبه، ۱۲&nbsp;اسفند&nbsp;۱۳۹۶</time></div>
-        	  
-            <section class="entry-body">
-            <a name="more"></a>
-<p>درایور پرینترهای cannon آزاد نیستند و کتابخانه‌های باینری تهیه شده توسط cannon برای معماری i386 هستند. پس اگر میخواهید از این پرینترها روی سیستم‌های ۶۴بیتی استفاده کنید، باید در ابتدا معماری چندگانه را فعال کنید و چند کتابخانه را نصب کنید:</p>
+<section class="container article-list">
+  
+    <article id="cannon-lbp6000" itemscope itemprop="blogPost">
+      <time>
+        
+          ۱۳۹۶/۱۲/۱۲
+        
+      </time>
+      <h3 itemprop="name">
+        <a href="/2018/03/03/cannon-lbp6000/" itemprop="url">نصب پرینتر cannon lbp6000 برای دبیان/اوبونتو</a>
+      </h3>
+      
+      <h4>توضیحات پست</h4>
+      
+    </article>
+  
+</section>
 
-<pre><code class="language-bash"># amd64 only
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get install libstdc++6:i386 libxml2:i386 zlib1g:i386 libpopt0:i386
-</code></pre>
+<!-- /Content -->
+<!-- Footer -->
+<footer>
+    <!--<section class="copyright">
 
-<p>اگر cups نصب نیست آن‌را نصب کنید:</p>
-
-<pre><code class="language-bash">sudo apt-get install cups
-</code></pre>
-
-<p>درایورهای کنون را <a href="http://support-asia.canon-asia.com/contents/ASIA/EN/0100459601.html">دانلود</a> و از حالت فشرده خارج کنید:</p>
-
-<pre><code class="language-bash">wget http://gdlp01.c-wss.com/gds/6/0100004596 مستقمیا از طریق خط فرمان دریافت کنید
-tar -zxvf Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz/03/Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz
-</code></pre>
-
-<p>درایور ۳۲ یا ۶۴ بیتی مورد نیاز را نصب کنید:</p>
-
-<pre><code class="language-bash"> - 32-bit:
-sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/32-bit_Driver/Debian/*.deb
-
- - 64-bit:
-sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
-</code></pre>
-
-<p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر</p>
-
-<pre><code>/usr/share/cups/model
-</code></pre>
-
-<p>نگاه میکنیم، هم‌نام یا شبیه‌ترین نام به مدل دستگاه خود را پیدا کنید.</p>
-
-<pre><code class="language-bash">grep -H ModelName /usr/share/cups/model/*.ppd | less
-...
-    /usr/share/cups/model/CNCUPSLBP6018CAPTS.ppd:*ModelName: "Canon LBP6000/LBP6018 CAPT (US)"
-</code></pre>
-
-<p>برای این مورد ما <code>CNCUPSLBP6018CAPTS.ppd</code> را که با مدل LBP6000 همخوانی دارد را انتخاب میکنیم.</p>
-
-<pre><code class="language-bash">sudo lpadmin -p LBP6000 -m CNCUPSLBP6018CAPTS.ppd -v ccp://localhost:59687
-sudo lpadmin -p LBP6000 -E
-sudo ccpdadmin -p LBP6000 -o /dev/usb/lp0
-</code></pre>
-
-<p>و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم</p>
-
-<pre><code class="language-bash">sudo update-rc.d ccpd defaults
-</code></pre>
-
-<p>گاهی اوقات ccpd هنگ میکند و queue تنها پیغام Processing since را نمایش می‌دهد و هیچ پرینتی صورت نمیگیرد، در این حالت برای پرینت گرفتن این دستورات را به ترتیب اجرا کنید یا یک فایل bash بسازید که تمام این دستورات را به ترتیب اجرا کند:</p>
-
-<pre><code class="language-bash">pkill -9 -x ccpd
-pkill -9 -x captmoncnabc
-/etc/init.d/ccpd start
-/etc/init.d/ccpd status
-</code></pre>
-
-<p>احتمالا برای اجرای اکثر دستورات بالا به sudo هم نیاز خواهید داشت.</p>
-
-<p>برای به اشتراک گذاشتن پرینتر در شبکه با کامپیوترهایی که از ویندوز استفاده میکنند هم samba را نصب کیند و این تغییرات را در تنظیمات آن اعمال کنید:</p>
-
-<pre><code>sudo gedit /etc/samba/smb.conf
-</code></pre>
-
-<p>در قسمت [printers] :</p>
-
-<pre><code>browseable = yes
-guest ok = yes
-</code></pre>
-
-<p>و samba را ری‌استارت کنید:</p>
-
-<pre><code>sudo service smbd restart
-sudo service nmbd restart
-</code></pre>
-
-<p>در setting سیستم، قسمت printer منوی server را انتخاب کنید و Publish shared printers connected to this server را فعال کنید، بر روی پرینتر نصب شده کلیک راست کنید و Shared را چک بزنید.</p>
-
-            </section>
-
-            <section class="meta">
-            <span>              دسته بندی:                <a href="/categories/سخت-افزار/">سخت افزار</a>              برچسب‌ها:                <a href="/tags/cannon/">cannon</a>،&nbsp;                <a href="/tags/lbp6000/">lbp6000</a>،&nbsp;                <a href="/tags/لینوکس/">لینوکس</a>،&nbsp;                <a href="/tags/cups/">cups</a>،&nbsp;                <a href="/tags/samba/">samba</a>،&nbsp;                <a href="/tags/پرینتر/">پرینتر</a>،&nbsp;                <a href="/tags/اوبونتو/">اوبونتو</a>            </span>
-            </section>
-          </article>
-          
-<!-- Paging -->
-          <section id="pager">
-            <nav class="container">
-            
-
-			      
-            </nav>
-          </section>
-<!-- /Paging -->
-				</div>
-			</div>
-			<div id="beta">
-        <div id="beta-inner">
-          <aside class="side-box">
-            اگر دوست داشته باشید می‌تونید من رو جاهای دیگه هم پیدا کنید
-            <ul>
-              <li><a href="https://github.com/kiamazi">گیت‌هاب</a></li>
-              <li><a href="https://twitter.com/kiavash">توییتر‍</a></li>
-            </ul>
-          </aside>
-          <aside class="side-box">
-            <h2>پیگیری</h2>
-            اگر مایل باشید میتوانید مطالب را از طریق خوراک سایت در خبرخوان‌ها پیگیری کنید
-            <a href="http://feeds.feedburner.com/kiavash/feed" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">
-            <img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a>
-            <a href="//kiavash.one/atom.xml" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">مشترک فید تجربه باز شوید</a>
-            
-            <!-- 
-            <a href="http://feeds.feedburner.com/kiavash/feed" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">مشترک فید تجربه باز شوید</a>
-            -->
-          </aside>          <aside class="side-box">
-            <h2>دسته‌بندی‌ها</h2>
-            <ul>              <li><a href="/categories/میرا/">میرا</a></li>
-                            <li><a href="/categories/اینترنت/">اینترنت</a></li>
-                            <li><a href="/categories/سخت-افزار/">سخت افزار</a></li>
-                            <li><a href="/categories/ابزار/">ابزار</a></li>
-                            <li><a href="/categories/آموزش/">آموزش</a></li>
-                          </ul>
-          </aside>          <aside class="side-box">
-            <h2>برچسب‌ها</h2>
-            <ul class="tags">              <li class="side-links"><a href="/tags/میرا/">میرا</a></li>
-                                          <li class="side-links"><a href="/tags/گیت‌هاب/">گیت‌هاب</a></li>
-                                          <li class="side-links"><a href="/tags/پرینتر/">پرینتر</a></li>
-                                          <li class="side-links"><a href="/tags/مارک-داون/">مارک داون</a></li>
-                                          <li class="side-links"><a href="/tags/لینوکس/">لینوکس</a></li>
-                                          <li class="side-links"><a href="/tags/سلام-دنیا/">سلام دنیا</a></li>
-                                          <li class="side-links"><a href="/tags/سایت-ساز-استاتیک/">سایت ساز استاتیک</a></li>
-                                          <li class="side-links"><a href="/tags/دامین-شخصی/">دامین شخصی</a></li>
-                                          <li class="side-links"><a href="/tags/ایمیل/">ایمیل</a></li>
-                                          <li class="side-links"><a href="/tags/اوبونتو/">اوبونتو</a></li>
-                                          <li class="side-links"><a href="/tags/انتشار-استاتیک/">انتشار استاتیک</a></li>
-                                          <li class="side-links"><a href="/tags/ابزار/">ابزار</a></li>
-                                          <li class="side-links"><a href="/tags/آموزش/">آموزش</a></li>
-                                          <li class="side-links"><a href="/tags/samba/">samba</a></li>
-                                          <li class="side-links"><a href="/tags/mrakdown/">mrakdown</a></li>
-                                          <li class="side-links"><a href="/tags/mailgun/">mailgun</a></li>
-                                          <li class="side-links"><a href="/tags/lbp6000/">lbp6000</a></li>
-                                          <li class="side-links"><a href="/tags/https/">https</a></li>
-                                          <li class="side-links"><a href="/tags/gmail/">gmail</a></li>
-                                          <li class="side-links"><a href="/tags/github/">github</a></li>
-                                          <li class="side-links"><a href="/tags/custom-domain/">custom domain</a></li>
-                                          <li class="side-links"><a href="/tags/cups/">cups</a></li>
-                                          <li class="side-links"><a href="/tags/cloudflare/">cloudflare</a></li>
-                                          <li class="side-links"><a href="/tags/cannon/">cannon</a></li>
-                                        </ul>          </aside>
-
-          <div class="side-box">
-            <h2>لینک‌ها</h2>
-            <ul>
-              
-              <a href="http://thecoach.ir/"><li class="side-links">
-                امیر مهرانی
-              </li></a>
-              
-              <a href="https://blog.dutymess.ir/"><li class="side-links">
-                طه
-              </li></a>
-              
-              <a href="https://sallar.me/farsi/"><li class="side-links">
-                سالار کابلی
-              </li></a>
-              
-              <a href="https://mehdix.ir/"><li class="side-links">
-                مهدی صادقی
-              </li></a>
-              
-              <a href="http://thecoci.me/farsi/"><li class="side-links">
-                سروش صفری
-              </li></a>
-              
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-		</div>
-	</section>
-  <!-- Footer -->
-  <footer>
-    <div id="footer-inner">
-      <section class="copyright">
-        <p class="container">
+    </section>
+    <section class="container">
+      <div class="delimiter">
+        <a href="/" class="logo">
+          <img src="/static/img/logo.png">
+        </a>
+      </div>-->
+      <p>
+        
+          تمام حقوق محفوظ است<br>
           مطالب تحت لیسانس <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license" target="_blank">کریتیو کامنز</a> منتشر می‌شوند.
-        </p>
-        <p>قدرت گرفته توسط <a href="https://miraxy.github.io/fa/">میرا</a></p>
-      </section>
-    </div>
-  </footer>
+        
+      </p>
+    </section>
+</footer>
 <!-- /Footer -->
 
 <!-- Scripts -->
-  <script src="/static/js/highlight.pack.js"></script>
-  <script src="/static/js/highlightjs-line-numbers.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-  </script>
-<!-- /Scripts -->
+<script src="/static/theme/miramal/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
