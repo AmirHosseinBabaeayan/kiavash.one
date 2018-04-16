@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-04-16T20:30:49+0330</updated>
+  <updated>2018-04-16T20:38:10+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -705,7 +705,7 @@ style="border:1px;width:150px"
     end tell
 </code></pre>
 
-<p>will turn into:</p>
+<p>برابر است با:</p>
 
 <pre><code>&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
 
