@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-04-16T20:16:33+0330</updated>
+  <updated>2018-04-16T20:30:49+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -117,6 +117,8 @@
 
 <pre><code>markmod filename &gt; name.html
 </code></pre>
+
+<p>همچنین کدهای منبع هم در <a href="https://github.com/kiamazi/markmoredown">مخزن گیت‌هاب پروژه</a> در دسترس هستند و میتونید از روی سورس نصبش کنید یا در گسترشش مشارکت کنید.</p>
 
 <h2 id="دستور_زبان">دستور زبان</h2>
 
