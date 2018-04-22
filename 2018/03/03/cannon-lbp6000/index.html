@@ -23,8 +23,8 @@ sudo apt-get install cups
 
 درایورهای کنون را دانلود و از حالت فشرده خارج کنید:
 
-wget http://gdlp01.c-wss.com/gds/6/0100004596 مستقمیا از طریق خط فرمان دریافت کنید
-tar -zxvf Linux_C&lt;/p&gt;">
+یا اینکه مستقمیا از طریق خط فرمان فایل مورد نیاز را دانلود کنید
+wget http://gdlp01.c-wss.com/gds/6/0&lt;/p&gt;">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="نصب پرینتر cannon lbp6000 برای دبیان/اوبونتو">
   <meta name="twitter:description" content="&lt;p&gt;درایور پرینترهای cannon آزاد نیستند و ...">
@@ -91,7 +91,8 @@ sudo apt-get install libstdc++6:i386 libxml2:i386 zlib1g:i386 libpopt0:i386
 
 <p>درایورهای کنون را <a href="http://support-asia.canon-asia.com/contents/ASIA/EN/0100459601.html">دانلود</a> و از حالت فشرده خارج کنید:</p>
 
-<pre><code class="language-bash">wget http://gdlp01.c-wss.com/gds/6/0100004596 مستقمیا از طریق خط فرمان دریافت کنید
+<pre><code class="language-bash">یا اینکه مستقمیا از طریق خط فرمان فایل مورد نیاز را دانلود کنید
+wget http://gdlp01.c-wss.com/gds/6/0100004596
 tar -zxvf Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz/03/Linux_CAPT_PrinterDriver_V260_uk_EN.tar.gz
 </code></pre>
 
@@ -104,7 +105,7 @@ sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/32-bit_Driver/Debian/*.deb
 sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
 </code></pre>
 
-<p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر</p>
+<p>حالا برای پیدا کردن فایل ppd مناسب به این مسیر:</p>
 
 <pre><code>/usr/share/cups/model
 </code></pre>
@@ -121,11 +122,11 @@ sudo dpkg -i Linux_CAPT_PrinterDriver_V260_uk_EN/64-bit_Driver/Debian/*.deb
 <pre><code class="language-bash">sudo lpadmin -p LBP6000 -m CNCUPSLBP6018CAPTS.ppd -v ccp://localhost:59687
 sudo lpadmin -p LBP6000 -E
 sudo ccpdadmin -p LBP6000 -o /dev/usb/lp0
-```
-و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم
+</code></pre>
 
-``` bash
-sudo update-rc.d ccpd defaults
+<p>و سیستم را برای شروع کردن دایمون cannon ccpd پیکربندی میکنیم</p>
+
+<pre><code class="language-bash">sudo update-rc.d ccpd defaults
 </code></pre>
 
 <p>گاهی اوقات ccpd هنگ میکند و queue تنها پیغام Processing since را نمایش می‌دهد و هیچ پرینتی صورت نمیگیرد، در این حالت برای پرینت گرفتن این دستورات را به ترتیب اجرا کنید یا یک فایل bash بسازید که تمام این دستورات را به ترتیب اجرا کند:</p>
