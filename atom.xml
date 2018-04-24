@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-04-25T03:54:11+0330</updated>
+  <updated>2018-04-25T04:08:21+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -234,9 +234,9 @@ Labore officiis his ex, soluta officiisconcludaturque ei qui, vide sensibus vim 
 
 <p>برای کج نوشتن یا موردتاکید قرار دادن یک کلمه از یک زیرخط _ قبل و بعد از کلمات استفاده می‌کنیم.</p>
 
-<pre><code>این کلمه _مورد تاکید_ است
+<p>این کلمه <strong>_مورد تاکید_</strong> است</p>
 
-این کلمه &lt;em&gt;مورد تاکید&lt;/em&gt; است
+<pre><code>این کلمه &lt;em&gt;مورد تاکید&lt;/em&gt; است
 </code></pre>
 
 <p>این کلمه <em>مورد تاکید</em> است</p>
@@ -256,9 +256,9 @@ Labore officiis his ex, soluta officiisconcludaturque ei qui, vide sensibus vim 
 
 <p>با استفاده از دو بعلاوه + متن اضافه شده مشخص میشود</p>
 
-<pre><code>این یک متن است که این ++کلمه++ به آن اضافه شده است.
+<p>این یک متن است که این <strong>++کلمه++</strong> به آن اضافه شده است.</p>
 
-این یک متن است که این &lt;ins&gt;کلمه&lt;/ins&gt; به آن اضافه شده است.
+<pre><code>این یک متن است که این &lt;ins&gt;کلمه&lt;/ins&gt; به آن اضافه شده است.
 </code></pre>
 
 <p>این یک متن است که این <ins>کلمه</ins> به آن اضافه شده است.</p>
@@ -267,9 +267,9 @@ Labore officiis his ex, soluta officiisconcludaturque ei qui, vide sensibus vim 
 
 <p>با استفاده از دو منفی - قبل و بعد از هر کلمه آن را کوچک می‌کنیم</p>
 
-<pre><code>این کلمه --کوچک‌تر-- است
+<p>این کلمه <strong>--کوچک‌تر--</strong> است</p>
 
-این کلمه &lt;small&gt;کوچکتر&lt;/small&gt; است
+<pre><code>این کلمه &lt;small&gt;کوچکتر&lt;/small&gt; است
 </code></pre>
 
 <p>این کلمه <small>کوچکتر</small> است</p>
@@ -278,18 +278,18 @@ Labore officiis his ex, soluta officiisconcludaturque ei qui, vide sensibus vim 
 
 <p>با استفاده از دو آکولاد ~ قبل و بعد از کلمات آن‌ها را حذف شده معرفی می‌کنیم</p>
 
-<pre><code>قسمتی از متن ~~ابتشاه~~ نوشته شده
+<p>قسمتی از متن <strong>~~ابتشاه~~</strong> نوشته شده</p>
 
-قسمتی از متن &lt;del&gt;ابتشاه&lt;/del&gt; نوشته شده
+<pre><code>قسمتی از متن &lt;del&gt;ابتشاه&lt;/del&gt; نوشته شده
 </code></pre>
 
 <p>قسمتی از متن <del>ابتشاه</del> نوشته شده</p>
 
 <h4 id="متن_حذف_اضافه_شده">متن حذف/اضافه شده</h4>
 
-<pre><code>این قسمت از متن ~~ابتشاه~&gt;اشتباه~~ نوشته شده بود
+<p>این قسمت از متن <strong>~~ابتشاه~>اشتباه~~</strong> نوشته شده بود</p>
 
-این قسمت از متن &lt;del&gt;ابتشاه&lt;/del&gt; &lt;ins&gt;اشتباه&lt;/ins&gt; نوشته شده بود
+<pre><code>این قسمت از متن &lt;del&gt;ابتشاه&lt;/del&gt; &lt;ins&gt;اشتباه&lt;/ins&gt; نوشته شده بود
 </code></pre>
 
 <p>این قسمت از متن <del>ابتشاه</del> <ins>اشتباه</ins> نوشته شده بود</p>
@@ -308,7 +308,7 @@ x <sup>y + z</sup></p>
 
 <h4 id="متن_زیرنویس">متن زیرنویس</h4>
 
-<p>متن ~زیرنویس~</p>
+<p>متن <strong>~زیرنویس~</strong></p>
 
 <p>متن <sub>زیرنویس</sub></p>
 
