@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-04-29T22:59:04+0330</updated>
+  <updated>2018-04-30T01:25:49+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -235,6 +235,11 @@ sudo apt install persepolis
 
 <pre><code>sudo add-apt-repository ppa:webupd8team/atom
 sudo apt install atom
+</code></pre>
+
+<p>یا با استفاده از snap آن‌را نصب می‌کنیم</p>
+
+<pre><code>snap install atom
 </code></pre>
 
 <h3 id="shutter">Shutter</h3>
