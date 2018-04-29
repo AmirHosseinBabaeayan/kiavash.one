@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-04-29T21:14:41+0330</updated>
+  <updated>2018-04-29T22:59:04+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -219,14 +219,14 @@ sudo apt install persepolis
 
 <p>پخش کننده‌ی چندرسانه‌ای با قابلیت پشتیبانی و پخش اکثر فرمت‌های موجود</p>
 
-<pre><code>sudo apt-get install vlc browser-plugin-vlc
+<pre><code>sudo apt install vlc browser-plugin-vlc
 </code></pre>
 
 <h3 id="gimp">Gimp</h3>
 
 <p>ادیتور تصاویر، جایگزین خیلی خوب برای فوتوشاپ در کارهای روزانه و شخصی</p>
 
-<pre><code>sudo apt-get install gimp gimp-data gimp-plugin-registry gimp-data-extras
+<pre><code>sudo apt install gimp gimp-data gimp-plugin-registry gimp-data-extras
 </code></pre>
 
 <h3 id="atom">atom</h3>
@@ -234,7 +234,7 @@ sudo apt install persepolis
 <p>یک IDE خوب برای کدنویسی و هر کار مشابه دیگر</p>
 
 <pre><code>sudo add-apt-repository ppa:webupd8team/atom
-sudo apt-get install atom
+sudo apt install atom
 </code></pre>
 
 <h3 id="shutter">Shutter</h3>
