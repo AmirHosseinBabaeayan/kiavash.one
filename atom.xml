@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-04-30T02:03:23+0330</updated>
+  <updated>2018-04-30T02:20:50+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -251,7 +251,7 @@ sudo apt install atom
 
 <h3 id="tor">TOR</h3>
 
-<p>ابزار عبور از تحریم‌های بین‌المللی و متاسفانه داخلی</p>
+<p>حفاظت از حریم خصوصی، امنیت، عبور از تحریم‌های بین‌المللی و متاسفانه داخلی و...</p>
 
 <pre><code>sudo apt install tor
 
