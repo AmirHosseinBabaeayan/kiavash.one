@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-05-01T18:53:13+0330</updated>
+  <updated>2018-05-01T18:53:50+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -272,7 +272,7 @@ sudo apt install privoxy
 
 sudo apt install torsocks
     less /etc/tor/torsocks.conf
-        # چک کنید که این ۲خط کامنت نباشند(در ابذای خط # نباشد)
+        # چک کنید که این ۲خط کامنت نباشند(در ابتدای خط # نباشد)
             TorAddress 127.0.0.1
             TorPort 9050
 
