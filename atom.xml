@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-05-02T03:12:41+0330</updated>
+  <updated>2018-05-02T03:16:16+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -124,7 +124,7 @@ sudo apt install libdvd-pkg
 sudo apt install tlp tlp-rdw
 </code></pre>
 
-<p>در این نسخه از اوبونتو بعد از اضافه کردن مخازن، به شکل اتوماتیک دستور update اجرا می‌شود و نیازی به اجرای آن نداریم. پس از نصب، با اجرای دستور زیر کار برنامه را شروع می‌کنیم:</p>
+<p>در این نسخه از اوبونتو بعد از اضافه کردن مخازن، به شکل پیش‌فرض دستور apt update اجرا می‌شود و نیازی به اجرای آن نداریم. پس از نصب، با اجرای دستور زیر کار برنامه را شروع می‌کنیم:</p>
 
 <pre><code>sudo tlp start
 </code></pre>
