@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-05-02T22:51:26+0330</updated>
+  <updated>2018-05-02T23:03:58+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>بعد از نصب اوبونتو ۱۸.۰۴</title>
-    <link href="http://kiavash.one/after-installing-ubuntu-18-04/"/>
-    <id>http://kiavash.one/after-installing-ubuntu-18-04/</id>
+    <link href="http://kiavash.one/2018/04/29/after-installing-ubuntu-18-04/"/>
+    <id>http://kiavash.one/2018/04/29/after-installing-ubuntu-18-04/</id>
 
     <published>2018-04-29T16:36:28+0330</published>
     <updated>2018-04-29T16:36:28+0330</updated>
@@ -311,8 +311,8 @@ https://itsfoss.com/</p>]]></content>
   
   <entry>
     <title>مارک مور داون (مارک‌مود) / MarkMoreDown~>markmod</title>
-    <link href="http://kiavash.one/markmoredown/"/>
-    <id>http://kiavash.one/markmoredown/</id>
+    <link href="http://kiavash.one/2018/04/14/markmoredown/"/>
+    <id>http://kiavash.one/2018/04/14/markmoredown/</id>
 
     <published>2018-04-14T11:28:05+0330</published>
     <updated>2018-04-14T11:28:05+0330</updated>
@@ -1187,8 +1187,8 @@ $$
   
   <entry>
     <title>مارک داون / MarkDown</title>
-    <link href="http://kiavash.one/markdown/"/>
-    <id>http://kiavash.one/markdown/</id>
+    <link href="http://kiavash.one/2018/03/19/markdown/"/>
+    <id>http://kiavash.one/2018/03/19/markdown/</id>
 
     <published>2018-03-19T23:59:29+0330</published>
     <updated>2018-03-19T23:59:29+0330</updated>
@@ -1482,8 +1482,8 @@ __متن پررنگ__
   
   <entry>
     <title>هک کردن جی‌میل برای استفاده کردن روی دامنه شخصی با کمک mailgun</title>
-    <link href="http://kiavash.one/hacking-gmail-to-use-custom-domains-for-free-with-mailgun/"/>
-    <id>http://kiavash.one/hacking-gmail-to-use-custom-domains-for-free-with-mailgun/</id>
+    <link href="http://kiavash.one/2018/03/17/hacking-gmail-to-use-custom-domains-for-free-with-mailgun/"/>
+    <id>http://kiavash.one/2018/03/17/hacking-gmail-to-use-custom-domains-for-free-with-mailgun/</id>
 
     <published>2018-03-17T16:41:42+0330</published>
     <updated>2018-03-17T16:41:42+0330</updated>
@@ -1581,8 +1581,8 @@ Password: YOUR PASSWORD set in mailgun
   
   <entry>
     <title>اتصال دامنه شخصی به صفحات گیت‌هاب و فعال کردن https با کمک cloudflare</title>
-    <link href="http://kiavash.one/cloudflare/"/>
-    <id>http://kiavash.one/cloudflare/</id>
+    <link href="http://kiavash.one/2018/03/13/cloudflare/"/>
+    <id>http://kiavash.one/2018/03/13/cloudflare/</id>
 
     <published>2018-03-13T21:54:13+0330</published>
     <updated>2018-03-13T21:54:13+0330</updated>
@@ -1643,8 +1643,8 @@ Password: YOUR PASSWORD set in mailgun
   
   <entry>
     <title>راه اندازی یک وبلاگ استاتیک با کمک میرا و گیت‌هاب</title>
-    <link href="http://kiavash.one/weblog-with-mira-and-github/"/>
-    <id>http://kiavash.one/weblog-with-mira-and-github/</id>
+    <link href="http://kiavash.one/2018/03/11/weblog-with-mira-and-github/"/>
+    <id>http://kiavash.one/2018/03/11/weblog-with-mira-and-github/</id>
 
     <published>2018-03-11T18:17:56+0330</published>
     <updated>2018-03-11T18:17:56+0330</updated>
@@ -1791,8 +1791,8 @@ tag:
   
   <entry>
     <title>نصب پرینتر cannon lbp6000 برای دبیان/اوبونتو</title>
-    <link href="http://kiavash.one/cannon-lbp6000/"/>
-    <id>http://kiavash.one/cannon-lbp6000/</id>
+    <link href="http://kiavash.one/2018/03/03/cannon-lbp6000/"/>
+    <id>http://kiavash.one/2018/03/03/cannon-lbp6000/</id>
 
     <published>2018-03-03T20:31:56+0330</published>
     <updated>2018-03-03T20:31:56+0330</updated>
@@ -1901,8 +1901,8 @@ wget http://gdlp01.c-wss.com/gds/6/0&lt;/p&gt;
   
   <entry>
     <title>سلام دنیا از دریچه‌ی میرا</title>
-    <link href="http://kiavash.one/hello-world-from-mira/"/>
-    <id>http://kiavash.one/hello-world-from-mira/</id>
+    <link href="http://kiavash.one/2018/03/01/hello-world-from-mira/"/>
+    <id>http://kiavash.one/2018/03/01/hello-world-from-mira/</id>
 
     <published>2018-03-01T00:21:54+0330</published>
     <updated>2018-03-01T00:21:54+0330</updated>
