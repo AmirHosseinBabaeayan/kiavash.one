@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-05-23T02:21:06+0330</updated>
+  <updated>2018-05-23T02:28:40+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -16,7 +16,7 @@
 
   
   <entry>
-    <title>امضای کامیت‌ها با gpg</title>
+    <title>امضای کامیت‌ها با GPG</title>
     <link href="http://kiavash.one/2018/05/23/use-gpg-for-sign-commits/"/>
     <id>http://kiavash.one/2018/05/23/use-gpg-for-sign-commits/</id>
 
