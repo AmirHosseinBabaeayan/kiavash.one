@@ -5,7 +5,7 @@
   <link href="http://kiavash.one/feed.xml" rel="self"/>
   <link href="http://kiavash.one"/>
 
-  <updated>2018-05-23T02:28:40+0330</updated>
+  <updated>2018-05-23T03:07:30+0330</updated>
   <id>http://kiavash.one</id>
   
   <author>
@@ -114,7 +114,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
 
 <h2 id="دادن_کلید_به_گیت">دادن کلید به گیت</h2>
 
-<p><strong>۱.</strong> با استفاده از دستور زیر مشخصات کاملی از کلید‌هایی که ساخته‌ای را می‌توانیم ببینیم:</p>
+<p><strong>۱.</strong> با استفاده از دستور زیر مشخصات کاملی از کلید‌هایی که ساخته‌ایم را می‌توانیم ببینیم:</p>
 
 <pre><code>gpg --list-secret-keys --keyid-format LONG me@kiavash.one
 </code></pre>
