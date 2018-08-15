@@ -5,7 +5,7 @@
   <link href="http://kiavash.one//feed.xml" rel="self"/>
   <link href="http://kiavash.one/"/>
 
-  <updated>2018-08-16T00:32:01+0330</updated>
+  <updated>2018-08-16T01:45:14+0330</updated>
   <id>http://kiavash.one/</id>
   
   <author>
@@ -43,7 +43,7 @@
 (cua-mode t)
 </code></pre>
 
-<p>با کلیدهای ایمکس رو میبندیم و دوباره اجرا میکنیم، از این به بعد کلیدهای کپی و پیست و کات و آندو و... همه به شکلی که میشناسیم کار میکنن، یعنی با ctrl+c - ctrl+v , ctrl+z و...</p>
+<p>با کلیدهای <code>ctrl+x ctrl+c</code> ایمکس رو میبندیم و دوباره اجرا میکنیم، از این به بعد کلیدهای کپی و پیست و کات و آندو و... همه به شکلی که میشناسیم کار میکنن، یعنی با ctrl+c - ctrl+v , ctrl+z و...</p>
 
 <p>برای نمایش شماره هر خط، در ابتدا، این خطوط رو به <code>.emacs</code> اضافه میکنیم:</p>
 
@@ -51,7 +51,7 @@
 (setq linum-format "%4d \u2502 ")
 </code></pre>
 
-<p>و بعد چندتا پکیج رو نیاز داریl که نصب کنیم که برای این هم این چند خط رو به به فایل <code>.emacs</code> اضافه مکینم</p>
+<p>و بعد چندتا پکیج رو نیاز داریم که نصب کنیم که برای این هم این چند خط رو به به فایل <code>.emacs</code> اضافه مکینم</p>
 
 <pre><code>(require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
