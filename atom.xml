@@ -5,7 +5,7 @@
   <link href="http://kiavash.one//feed.xml" rel="self"/>
   <link href="http://kiavash.one/"/>
 
-  <updated>2018-08-16T00:30:11+0330</updated>
+  <updated>2018-08-16T00:32:01+0330</updated>
   <id>http://kiavash.one/</id>
   
   <author>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>ایمکس، خیلی ساده</title>
-    <link href="http://kiavash.one/2018/08/15/sample-emacs/"/>
-    <id>http://kiavash.one/2018/08/15/sample-emacs/</id>
+    <link href="http://kiavash.one/2018/08/15/emacs/"/>
+    <id>http://kiavash.one/2018/08/15/emacs/</id>
 
     <published>2018-08-15T22:25:45+0330</published>
     <updated>2018-08-15T22:25:45+0330</updated>
