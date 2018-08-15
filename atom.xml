@@ -5,7 +5,7 @@
   <link href="http://kiavash.one//feed.xml" rel="self"/>
   <link href="http://kiavash.one/"/>
 
-  <updated>2018-08-16T01:46:50+0330</updated>
+  <updated>2018-08-16T01:56:47+0330</updated>
   <id>http://kiavash.one/</id>
   
   <author>
@@ -78,7 +78,7 @@ package-install  (enter)
 sublime-theme (enter)
 </code></pre>
 
-<p>و این چند خط رو به فایل `.emacs' اضافه میکنیم</p>
+<p>و این چند خط رو به فایل <code>.emacs</code> اضافه میکنیم</p>
 
 <pre><code>(defun my-tabbar-buffer-groups () ;; customize to show all normal files in one group
   (list (cond ((string-equal "*" (substring (buffer-name) 0 1)) "emacs")
